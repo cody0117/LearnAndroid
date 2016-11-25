@@ -1,0 +1,16 @@
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar_msg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimaryDark"
+    app:logo="@mipmap/logo"
+    app:navigationIcon="@mipmap/back"
+    app:titleTextColor="@color/colorwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/colorwhite"-->
+        <!--android:textSize="18sp"-->
+        <!--android:text="磨砺新闻"/>-->
+   </android.support.v7.widget.Toolbar>
