@@ -1,0 +1,79 @@
+
+FILE CHANGELOG FOR V2.2 AND V2.2.1 (New files are not mentioned in this changelog).
+=== ================================================================
+Files 'res/layout/activity_main.xml' and 'res/layout/activity_main.xml' are different
+Files 'res/layout/activity_main_alternate.xml' and 'res/layout/activity_main_alternate.xml' are different
+Files 'res/layout/activity_twitter_details.xml' and 'res/layout/activity_twitter_details.xml' are different
+Files 'res/layout/activity_wordpress_details.xml' and 'res/layout/activity_wordpress_details.xml' are different
+Files 'res/layout/activity_youtube_detail.xml' and 'res/layout/activity_youtube_detail.xml' are different
+Files 'res/layout/drawer_top.xml' and 'res/layout/drawer_top.xml' are different
+Files 'res/layout/fragment_tweets_row.xml' and 'res/layout/fragment_tweets_row.xml' are different
+Files 'res/layout/fragment_wordpress_list_row.xml' and 'res/layout/fragment_wordpress_list_row.xml' are different
+Files 'res/layout/fragment_youtube_row.xml' and 'res/layout/fragment_youtube_row.xml' are different
+Files 'res/values/dimens.xml' and 'res/values/dimens.xml' are different
+Files 'res/values/strings.xml' and 'res/values/strings.xml' are different
+Files 'res/xml/activity_settings.xml' and 'res/xml/activity_settings.xml' are different
+Files 'src/com/universal/fav/FavRed.java' and 'src/com/universal/fav/FavRed.java' are different
+Files 'src/com/universal/MainActivity.java' and 'src/com/universal/MainActivity.java' are different
+Files 'src/com/universal/media/ui/MediaFragment.java' and 'src/com/universal/media/ui/MediaFragment.java' are different
+Files 'src/com/universal/media/VisualizerView.java' and 'src/com/universal/media/VisualizerView.java' are different
+Files 'src/com/universal/NavDrawerFragment.java' and 'src/com/universal/NavDrawerFragment.java' are different
+Files 'src/com/universal/rss/RSSHandler.java' and 'src/com/universal/rss/RSSHandler.java' are different
+Files 'src/com/universal/rss/RSSItem.java' and 'src/com/universal/rss/RSSItem.java' are different
+Files 'src/com/universal/rss/RssService.java' and 'src/com/universal/rss/RssService.java' are different
+Files 'src/com/universal/rss/ui/RssDetailActivity.java' and 'src/com/universal/rss/ui/RssDetailActivity.java' are different
+Files 'src/com/universal/rss/ui/RssFragment.java' and 'src/com/universal/rss/ui/RssFragment.java' are different
+Files 'src/com/universal/twi/ui/TweetDetailActivity.java' and 'src/com/universal/twi/ui/TweetDetailActivity.java' are different
+Files 'src/com/universal/util/WebHelper.java' and 'src/com/universal/util/WebHelper.java' are different
+Files 'src/com/universal/web/WebviewFragment.java' and 'src/com/universal/web/WebviewFragment.java' are different
+Files 'src/com/universal/wordpress/CustomListAdapter.java' and 'src/com/universal/wordpress/CustomListAdapter.java' are different
+Files 'src/com/universal/wordpress/FeedItem.java' and 'src/com/universal/wordpress/FeedItem.java' are different
+Files 'src/com/universal/wordpress/ui/WordpressDetailActivity.java' and 'src/com/universal/wordpress/ui/WordpressDetailActivity.java' are different
+Files 'src/com/universal/wordpress/ui/WordpressFragment.java' and 'src/com/universal/wordpress/ui/WordpressFragment.java' are different
+Files 'src/com/universal/yt/ui/VideoDetailActivity.java' and 'src/com/universal/yt/ui/VideoDetailActivity.java' are different
+Files 'src/com/universal/yt/ui/VideosFragment.java' and 'src/com/universal/yt/ui/VideosFragment.java' are different
+
+
+
+FILE CHANGELOG FOR V2.1 AND V2.2 (New files are not mentioned in this changelog).
+=== ================================================================
+Files 'AndroidManifest.xml' and 'AndroidManifest.xml' are different
+Files 'libs/YouTubeAndroidPlayerApi.jar' and 'libs/YouTubeAndroidPlayerApi.jar' are different
+Files 'project.properties' and 'project.properties' are different
+Files 'res/layout/drawer_row.xml' and 'res/layout/drawer_row.xml' are different
+Files 'res/layout/fragment_maps.xml' and 'res/layout/fragment_maps.xml' are different
+Files 'res/layout/fragment_rss.xml' and 'res/layout/fragment_rss.xml' are different
+Files 'res/layout/fragment_tumblr.xml' and 'res/layout/fragment_tumblr.xml' are different
+Files 'res/layout/fragment_tweets.xml' and 'res/layout/fragment_tweets.xml' are different
+Files 'res/layout/fragment_webview.xml' and 'res/layout/fragment_webview.xml' are different
+Files 'res/layout/fragment_webview_actionbar.xml' and 'res/layout/fragment_webview_actionbar.xml' are different
+Files 'res/layout/fragment_wordpress_list.xml' and 'res/layout/fragment_wordpress_list.xml' are different
+Files 'res/layout/fragment_wordpress_list_row.xml' and 'res/layout/fragment_wordpress_list_row.xml' are different
+Files 'res/layout/fragment_youtube.xml' and 'res/layout/fragment_youtube.xml' are different
+Files 'res/layout/fragment_youtube_row.xml' and 'res/layout/fragment_youtube_row.xml' are different
+Files 'res/layout/listview_loading.xml' and 'res/layout/listview_loading.xml' are different
+Files 'res/values-v21/styles.xml' and 'res/values-v21/styles.xml' are different
+Files 'res/values/colors.xml' and 'res/values/colors.xml' are different
+Files 'res/values/dimens.xml' and 'res/values/dimens.xml' are different
+Files 'res/values/strings.xml' and 'res/values/strings.xml' are different
+Files 'res/values/styles.xml' and 'res/values/styles.xml' are different
+Files 'src/com/universal/Config.java' and 'src/com/universal/Config.java' are different
+Files 'src/com/universal/fav/FavRed.java' and 'src/com/universal/fav/FavRed.java' are different
+Files 'src/com/universal/Helper.java' and 'src/com/universal/Helper.java' are different
+Files 'src/com/universal/MainActivity.java' and 'src/com/universal/MainActivity.java' are different
+Files 'src/com/universal/maps/MapsFragment.java' and 'src/com/universal/maps/MapsFragment.java' are different
+Files 'src/com/universal/media/ui/MediaFragment.java' and 'src/com/universal/media/ui/MediaFragment.java' are different
+Files 'src/com/universal/NavDrawerAdapter.java' and 'src/com/universal/NavDrawerAdapter.java' are different
+Files 'src/com/universal/NavDrawerFragment.java' and 'src/com/universal/NavDrawerFragment.java' are different
+Files 'src/com/universal/NavItem.java' and 'src/com/universal/NavItem.java' are different
+Files 'src/com/universal/rss/ui/RssDetailActivity.java' and 'src/com/universal/rss/ui/RssDetailActivity.java' are different
+Files 'src/com/universal/rss/ui/RssFragment.java' and 'src/com/universal/rss/ui/RssFragment.java' are different
+Files 'src/com/universal/tumblr/ui/TumblrFragment.java' and 'src/com/universal/tumblr/ui/TumblrFragment.java' are different
+Files 'src/com/universal/twi/ui/TweetsFragment.java' and 'src/com/universal/twi/ui/TweetsFragment.java' are different
+Files 'src/com/universal/web/WebviewFragment.java' and 'src/com/universal/web/WebviewFragment.java' are different
+Files 'src/com/universal/wordpress/CustomListAdapter.java' and 'src/com/universal/wordpress/CustomListAdapter.java' are different
+Files 'src/com/universal/wordpress/ui/WordpressDetailActivity.java' and 'src/com/universal/wordpress/ui/WordpressDetailActivity.java' are different
+Files 'src/com/universal/wordpress/ui/WordpressFragment.java' and 'src/com/universal/wordpress/ui/WordpressFragment.java' are different
+Files 'src/com/universal/yt/player/YouTubePlayerActivity.java' and 'src/com/universal/yt/player/YouTubePlayerActivity.java' are different
+Files 'src/com/universal/yt/ui/VideosFragment.java' and 'src/com/universal/yt/ui/VideosFragment.java' are different
+Files 'src/com/universal/yt/VideosAdapter.java' and 'src/com/universal/yt/VideosAdapter.java' are different

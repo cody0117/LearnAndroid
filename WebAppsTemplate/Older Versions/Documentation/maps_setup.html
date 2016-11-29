@@ -1,0 +1,193 @@
+<h3 id="display_your_apps_certificate_information">Display your app's certificate information</h3>
+<p>The Maps API key is based on a short form of your application's digital
+certificate, known as its <strong>SHA-1 fingerprint</strong>. The fingerprint is a unique
+text string generated from the commonly-used SHA-1 hashing algorithm. Because
+the fingerprint is itself unique, Google Maps uses it as a way to identify
+your application.</p>
+<p>To display the SHA-1 fingerprint for your certificate, first ensure that you
+are using the right certificate. You may have two certificates:</p>
+<ul>
+<li><strong>Debug certificate</strong>: The Android SDK tools generate this certificate
+    automatically when you do a "debug" build from the command line, or when
+    you build and run a project from Eclipse without exporting it as a
+    released application. Only use this certificate with apps that you're
+    testing; do not attempt to publish an app that's signed with a debug
+    certificate. The debug certificate is described in more detail in the
+    section <a href="http://developer.android.com/tools/publishing/app-signing.html#debugmode">Signing in Debug
+    Mode</a>
+    in the Android Developer Documentation.</li>
+<li><strong>Release certificate</strong>: The Android SDK tools generate this certificate
+    when you do a "release" build with either <code>ant</code> program or Eclipse. You
+    can also generate this certificate using the <code>keytool</code> program. Use this
+    certificate when you are ready to release your app to the world.</li>
+</ul>
+<p>You can display a certificate's SHA-1 fingerprint using the <code>keytool</code> program
+with the <code>-v</code> parameter. For more information about Keytool, see the
+documentation at
+<a href="http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html">http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html</a>.</p>
+<p>Expand the sections below for detailed instructions on how to display
+your debug or release certificates.</p>
+<p><section class="expandable">
+<div class="showalways"></p>
+<h4 id="displaying_the_debug_certificate_fingerprint">Displaying the debug certificate fingerprint</h4>
+<p></div></p>
+<ol>
+<li>
+<p>Locate your debug keystore file. The file name is <code>debug.keystore</code>, and is
+     created the first time you build your project. By default, it is stored
+     in the same directory as your Android Virtual Device (AVD) files:</p>
+<ul>
+<li><strong>OS X and Linux</strong>: <code>~/.android/</code></li>
+<li><strong>Windows Vista and Windows 7</strong>:  <code>C:\Users\your_user_name\.android\</code></li>
+</ul>
+<p>If you are using Eclipse with ADT, and you're not sure where your debug
+ keystore is located, you can select <strong>Windows</strong> &gt; <strong>Prefs</strong> &gt;
+ <strong>Android</strong> &gt; <strong>Build</strong> to check the full path, which you can then
+ paste into a file explorer to locate the directory containing the keystore.</p>
+</li>
+<li>
+<p>List the SHA-1 fingerprint.</p>
+<ul>
+<li>
+<p>For Linux or OS X, open a terminal window and enter the following:</p>
+<pre class="prettyprint notranslate" translate="no"><code>keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+</code></pre>
+</li>
+<li>
+<p>For Windows Vista and Windows 7, run:</p>
+<pre class="prettyprint notranslate" translate="no"><code>keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>You should see output similar to this:</p>
+<pre class="prettyprint notranslate" translate="no"><code> Alias name: androiddebugkey
+ Creation date: Jan 01, 2013
+ Entry type: PrivateKeyEntry
+ Certificate chain length: 1
+ Certificate[1]:
+ Owner: CN=Android Debug, O=Android, C=US
+ Issuer: CN=Android Debug, O=Android, C=US
+ Serial number: 4aa9b300
+ Valid from: Mon Jan 01 08:04:04 UTC 2013 until: Mon Jan 01 18:04:04 PST 2033
+ Certificate fingerprints:
+      MD5:  AE:9F:95:D0:A6:86:89:BC:A8:70:BA:34:FF:6A:AC:F9
+      SHA1: BB:0D:AC:74:D3:21:E1:43:07:71:9B:62:90:AF:A1:66:6E:44:5D:75
+      Signature algorithm name: SHA1withRSA
+      Version: 3
+</code></pre>
+<p>The line that begins <code>SHA1</code> contains the certificate's SHA-1 fingerprint.
+ The fingerprint is the sequence of 20 two-digit hexadecimal numbers
+ separated by colons.</p>
+</li>
+</ol>
+<p></section></p>
+<p><section class="expandable">
+<div class="showalways"></p>
+<h4 id="displaying_the_release_certificate_fingerprint">Displaying the release certificate fingerprint</h4>
+<p></div></p>
+<ol>
+<li>
+<p>Locate your release certificate keystore file. There is no default location
+    or name for  the release keystore. If you don't specify one when you build
+    your application for release, the build will leave your <code>.apk</code> unsigned,
+    and you'll have to sign it before you can publish it.
+    For the release certificate, you also need the certificate's alias and the
+    passwords for the keystore and the certificate. You can list the aliases
+    for all the keys in a keystore by entering:</p>
+<p><pre class="notranslate">keytool -list -keystore <var>your_keystore_name</var></pre></p>
+<p>Replace <em><code>your_keystore_name</code></em> with the fully-qualified path and name of
+the keystore, including the <code>.keystore</code> extension. You'll be prompted for
+the keystore's password. Once you enter it, <code>keytool</code> displays all the
+aliases in the keystore.</p>
+</li>
+<li>
+<p>Enter the following at a terminal or command prompt:</p>
+<p><pre class="notranslate">keytool -list -v -keystore <var>your_keystore_name</var> -alias <var>your_alias_name</var></pre></p>
+<p>Replace <em><code>your_keystore_name</code></em> with the fully-qualified path and name of
+the keystore, including the <code>.keystore</code> extension. Replace
+<em><code>your_alias_name</code></em> with the alias that you assigned to the certificate
+when you created it.</p>
+<p><p class="caution"><b>Caution:</b> To protect your keystore and key, don't
+  enter the <code>storepass</code> or <code>keypass</code> arguments on the command line unless
+  you're confident of your computer's security. For example, on a public
+  computer, someone could look at your terminal window history or list
+  of running processes, get the password, and then have write access
+  to your signing certificate. This would allow that person to modify
+  or replace your application with their own.
+</p></p>
+</li>
+<li>
+<p>You should see a display that is similar to this:</p>
+<pre class="prettyprint notranslate" translate="no"><code> Alias name: &lt;alias_name&gt;
+ Creation date: Feb 02, 2013
+ Entry type: PrivateKeyEntry
+ Certificate chain length: 1
+ Certificate[1]:
+ Owner: CN=Android Debug, O=Android, C=US
+ Issuer: CN=Android Debug, O=Android, C=US
+ Serial number: 4cc9b300
+ Valid from: Mon Feb 02 08:01:04 UTC 2013 until: Mon Feb 02 18:05:04 PST 2033
+ Certificate fingerprints:
+      MD5:  AE:9F:95:D0:A6:86:89:BC:A8:70:BA:34:FF:6B:AC:F9
+      SHA1: BB:0D:AC:74:D3:21:E1:43:67:71:9B:62:90:AF:A1:66:6E:44:5D:75
+      Signature algorithm name: SHA1withRSA
+      Version: 3
+</code></pre>
+<p>The line that begins <code>SHA1</code> contains the certificate's SHA-1 fingerprint.
+The fingerprint is the sequence of 20 two-digit hexadecimal numbers
+separated by colons.</p>
+</li>
+</ol>
+<p></section></p>
+<h3 id="create_an_api_project_in_the_google_apis_console">Create an API project in the Google APIs Console</h3>
+<p>Follow these steps to create or modify a project for your application in the
+Google APIs Console and register for the Maps API.</p>
+<ol>
+<li>In a browser, navigate to the <a href="https://code.google.com/apis/console/?noredirect">Google APIs Console</a>.<ul>
+<li>If you haven't used the Google APIs Console before, you're prompted to
+   create a project that you use to track your usage of the Google Maps
+   Android API. Click <strong>Create Project</strong>; the Console creates a new project
+   called <strong>API Project</strong>. On the next page, this name appears in the upper
+   left hand corner. To rename or otherwise manage the project, click on
+   its name.</li>
+<li>If you're already using the Google APIs Console, you will immediately
+   see a list of your existing projects and the available services.
+   It's still a good idea to use a new project for Google Maps Android
+   API, so select the project name in the upper left hand corner and then
+   click <strong>Create</strong>.</li>
+</ul>
+</li>
+<li>You should see a list of APIs and services in the main window. If you
+    don't, select <strong>Services</strong> from the left navigation bar.</li>
+<li>In the list of services displayed in the center of the page, scroll down
+    until you see <strong>Google Maps Android API v2</strong>. To the right of the entry,
+    click the switch indicator so that it is <strong>on</strong>.</li>
+<li>This displays the <a href="/maps/terms">Google Maps Android API Terms of Service</a>.
+    If you agree to the terms of service, click the checkbox below the terms
+    of service, then click <strong>Accept</strong>. This returns you to the list of APIs and
+    services.</li>
+</ol>
+<h3 id="obtain_a_google_maps_api_key">Obtain a Google Maps API key</h3>
+<p>If your application is registered with the Google Maps Android API v2 service,
+then you can request an API key. It's possible to register more than one key
+per project.</p>
+<ol>
+<li>Navigate to your project in the <a href="https://code.google.com/apis/console/?noredirect">Google APIs Console</a>.</li>
+<li>In the <strong>Services</strong> page, verify that the "Google Maps Android API v2" is enabled.</li>
+<li>In the left navigation bar, click <strong>API Access</strong>.</li>
+<li>In the resulting page, click <strong>Create New Android Key...</strong>.</li>
+<li>
+<p>In the resulting dialog, enter the SHA-1 fingerprint, then a semicolon, then
+    your application's package name. For example:</p>
+<pre class="prettyprint notranslate" translate="no"><code>BB:0D:AC:74:D3:21:E1:43:67:71:9B:62:91:AF:A1:66:6E:44:5D:75;com.example.android.mapexample
+</code></pre>
+</li>
+<li>
+<p>The Google APIs Console responds by displaying <strong>Key for Android apps
+    (with certificates)</strong> followed by a forty-character API key, for example:</p>
+<pre class="prettyprint notranslate" translate="no"><code>AIzaSyBdVl-cTICSwYKrZ95SuvNw7dbMuDt1KG0
+</code></pre>
+</li>
+</ol>

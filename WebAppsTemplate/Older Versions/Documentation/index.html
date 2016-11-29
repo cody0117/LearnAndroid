@@ -1,0 +1,940 @@
+<!doctype html>  
+<!--[if IE 6 ]>
+<html lang="en-us" class="ie6">
+   <![endif]-->
+   <!--[if IE 7 ]>
+   <html lang="en-us" class="ie7">
+      <![endif]-->
+      <!--[if IE 8 ]>
+      <html lang="en-us" class="ie8">
+         <![endif]-->
+         <!--[if (gt IE 7)|!(IE)]><!-->
+         <html lang="en-us">
+            <!--<![endif]-->
+            <head>
+               <meta charset="utf-8">
+               <title>Universal Android Application Template - Multi purpose Android Template</title>
+               <meta name="description" content="Universal android application provides an alternative to the regular app builder. With rich features, an editable sourcode & a beautiful UI">
+               <meta name="author" content="Sherdle">
+               <meta name="copyright" content="Sherdle">
+               <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+               <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+               <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+               <script src="assets/js/google-code-prettify/prettify.js"></script>
+               <script src="assets/js/jquery.js"></script>
+               <script src="assets/js/jquery.scrollTo.js"></script>
+               <script src="assets/js/jquery.easing.js"></script>
+               <script>document.createElement('section');var duration='500',easing='swing';</script>
+               <script src="assets/js/script.js"></script>
+               <style>
+                  html{background-color:#FFFFFF;color:#383838;}
+                  ::-moz-selection{background:#444444;color:#DDDDDD;}
+                  ::selection{background:#444444;color:#DDDDDD;}
+                  #documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+                  a{color:#0000FF;}
+                  .btn {
+                  border-radius:3px;
+                  }
+                  .btn-primary {
+                  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+                  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+                  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+                  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+                  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+                  background-image: linear-gradient(top, #0088CC, #0044CC);
+                  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+                  border-color: #0044CC #0044CC #bfbfbf;
+                  color:#FFFFFF;
+                  }
+                  .btn-primary:hover,
+                  .btn-primary:active,
+                  .btn-primary.active,
+                  .btn-primary.disabled,
+                  .btn-primary[disabled] {
+                  border-color: #0088CC #0088CC #bfbfbf;
+                  background-color: #0044CC;
+                  }
+                  hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+                  #documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+                  #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+                  #documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+                  #documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+                  #documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+                  #documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+                  #documenter_copyright{display:block !important;visibility:visible !important;}
+               </style>
+            </head>
+            <body class="documenter-project-universal-android-application-template">
+               <div id="documenter_sidebar">
+                  <a href="#documenter_cover" id="documenter_logo"></a>
+                  <ul id="documenter_nav">
+                     <li><a class="current" href="#documenter_cover">Start</a></li>
+                     <li><a href="#welcome" title="Welcome">Welcome</a></li>
+                     <li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+                     <li><a href="#importing" title="Importing">Importing</a></li>
+                     <li><a href="#configuring" title="Configuring">Configuring</a></li>
+                     <li><a href="#finishing" title="Finishing">Finishing</a></li>
+                     <li><a href="#concluding" title="Concluding">Concluding</a></li>
+                     <li><a href="#extra" title="Extra">Extra</a></li>
+                  </ul>
+                  <div id="documenter_copyright">Copyright Sherdle 2014<br>
+                     made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+                  </div>
+               </div>
+               <div id="documenter_content">
+                  <section id="documenter_cover">
+                     <h1>Universal Android Application Template</h1>
+                     <h2>Multi purpose Android Template</h2>
+                     <div id="documenter_buttons">
+                        <a href="http://sherdle.com/support" class="btn btn-primary btn-large">Support</a> <a href="http://codecanyon.com/user/sherdleapps" class="btn btn-large">CodeCanyon</a> 
+                     </div>
+                     <hr>
+                     <ul>
+                        <li>latest update: 15/11/2014</li>
+                        <li>by: Sherdle</li>
+                        <li><a href=""></a></li>
+                        <li>email: <a href="mailto:&#99;&#114;&#101;&#119;&#64;&#115;&#104;&#101;&#114;&#100;&#108;&#101;&#46;&#99;&#111;&#109;">&#99;&#114;&#101;&#119;&#64;&#115;&#104;&#101;&#114;&#100;&#108;&#101;&#46;&#99;&#111;&#109;</a></li>
+                     </ul>
+                     <p>Thank you for purchasing my template, I really appreciate. Please read the documentation carefully, and if you have any questions, just contact me :)</p>
+                  </section>
+                  <section id="welcome">
+                     <div class="page-header">
+                        <h3>Welcome</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        Again thank you for downloading my template, let me give you a small introduction to the features:
+                     </p>
+                     <ul>
+                        <li>
+                           Native support for twitter, youtube, rss feeds, radio &amp; maps
+                        </li>
+                        <li>
+                           Pure Android UI, with cards &amp; flat sliding menu
+                        </li>
+                        <li>
+                           Offline reading - Remember your favorite articles &amp; read them offline
+                        </li>
+                        <li>
+                           User configurable options - Choose page to go to after boot, number of items, and more
+                        </li>
+                        <li>
+                           Notifications - Get information on the latest content
+                        </li>
+                        <li>
+                           Sherdle NativeWeb Technology<span style="color: rgb(68, 68, 68); font-family: arial, sans-serif; font-size: small; line-height: 16px;">&trade; - Converts HTML description of rss items to textviews &amp; imageviews</span>
+                        </li>
+                        <li>
+                           <span style="color: rgb(68, 68, 68); font-family: arial, sans-serif; font-size: small; line-height: 16px;">Customizable - Easy translation, Theme customization, Images &amp; Icons for items</span>
+                        </li>
+                        <li>
+                           <span style="color: rgb(68, 68, 68); font-family: arial, sans-serif; font-size: small; line-height: 16px;">Social - Promote your app and its content, let users share content</span>
+                        </li>
+                        <li>
+                           <font color="#444444" face="arial, sans-serif" size="2"><span style="line-height: 16px;">Open phone, store, etc, from webview</span></font>
+                        </li>
+                        <li>
+                           <font color="#444444" face="arial, sans-serif" size="2"><span style="line-height: 16px;">Dynamic webview navigation</span></font>
+                        </li>
+                        <li>
+                           <font color="#444444" face="arial, sans-serif" size="2"><span style="line-height: 16px;">Error handeling and no connection handeling</span></font>
+                        </li>
+                        <li>
+                           <font color="#444444" face="arial, sans-serif" size="2"><span style="line-height: 16px;">Admob Built-In</span></font>
+                        </li>
+                     </ul>
+                     <p>
+                        Now there are three options for you:
+                     </p>
+                     <ul>
+                        <li>
+                           If this is your very first android app, and you do not have the android sdk installed, please start at &quot;Getting started&quot;
+                        </li>
+                        <li>
+                           If you would like clear step-by-step instructions, start at &quot;Importing&quot;
+                        </li>
+                        <li>
+                           If you would like a &quot;Quick Start&quot; Go to the &quot;Configuring&quot; section
+                        </li>
+                     </ul>
+                     <p>
+                        &nbsp;
+                     </p>
+                  </section>
+                  <section id="getting_started">
+                     <div class="page-header">
+                        <h3>Getting Started</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        <strong>Installing JRE</strong>
+                     </p>
+                     <p>
+                        In this step we are going to install the java runtime environment.
+                     </p>
+                     <ol>
+                        <li>
+                           First, visit the java website:&nbsp;<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a>
+                        </li>
+                        <li>
+                           Now scroll down till you see this window, accept the license agreement and download the version for your PC.
+                        </li>
+                        <li>
+                           Follow the onscreen installation instructions, make sure that you install everything except the demos and samples.
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Adding Java to our path</strong>
+                     </p>
+                     <p>
+                        After java has successfully been installed, we have to add java to our path (if you are a Mac user, skip this).
+                     </p>
+                     <p>
+                        <em>Windows 7</em>
+                     </p>
+                     <ol>
+                        <li style="margin-left: 36pt;">
+                           Select Computer from the Start menu
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Choose System Properties from the context menu
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Click Advanced system settings &gt; Advanced tab
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Click on Environment Variables, under System Variables, find&nbsp;<strong>PATH</strong>, and click on it, if you do not have the PATH variable, you can add it.
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Continue to step 6
+                        </li>
+                     </ol>
+                     <p>
+                        <em>Windows XP</em>
+                     </p>
+                     <ol>
+                        <li style="margin-left: 36pt;">
+                           Start -&gt; Control Panel -&gt; System -&gt; Advanced
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Click on Environment Variables, under System Variables, find&nbsp;<strong>PATH</strong>, and click on it, if you do not have the PATH variable, you can add it.
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Continue to step 6
+                        </li>
+                     </ol>
+                     <p>
+                        <em>Windows Vista</em>
+                     </p>
+                     <ol>
+                        <li style="margin-left: 36pt;">
+                           Right click My Computer icon
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Choose Properties from the context menu
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Click Advanced tab (Advanced system settings link in Vista)
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Find PATH and click on it, if you do not have the PATH variable, you can add it.
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Continue to step 6
+                        </li>
+                     </ol>
+                     <p>
+                        <em>Windows (all)</em>
+                     </p>
+                     <ol>
+                        <li style="margin-left: 36pt;">
+                           Determine what you path to the java bin directory is, this will probably be something like&nbsp;<em>c:\program files\java\jdk1.7.xxx\bin</em>
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           It&rsquo;s important you have the precise path.
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Assuming there is already text in the&nbsp;<em>variable value</em>&nbsp;box, type a&nbsp;<em>;&nbsp;</em>followed by your path, no spaces.
+                        </li>
+                     </ol>
+                     <p>
+                        <em>Linux</em>
+                     </p>
+                     <p>
+                        Follow the instructions on the Java website:&nbsp;<a href="http://www.java.com/en/download/help/path.xml" target="_blank">http://www.java.com/en/download/help/path.xml</a>
+                     </p>
+                     <p>
+                        <strong>Installing ADT bundle</strong>
+                     </p>
+                     <p>
+                        Go to&nbsp;<a href="http://developer.android.com/sdk/installing/bundle.html" target="_blank">http://developer.android.com/sdk/installing/bundle.html</a>
+                     </p>
+                     <ol>
+                        <li style="margin-left: 36pt;">
+                           Download the bundle, and unzip it to a good location (example: My documents/development).
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Now open the &ldquo;Eclipse&rdquo; folder inside the unzip location (in the example: development), and run eclipse.exe (or similar on&nbsp;linux/mac)
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           After Eclipse has been loaded, go to&nbsp;<em>window&nbsp;</em><em>&agrave;</em><em>&nbsp;Android SDK manager.</em>
+                        </li>
+                        <li style="margin-left: 36pt;">
+                           Check the checkbox next to Android 4.2 and Tools and install the packages.
+                        </li>
+                     </ol>
+                  </section>
+                  <section id="importing">
+                     <div class="page-header">
+                        <h3>Importing</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        In this step, we will import the project &amp; the required libraries to eclipse. You can download the required libraries manually, or use the libraries packed in the libraries.zip file, the last option would be the easiest, if you are a more advanced user, you can also download the required libraries manually from their websites to have the latest updates.
+                     </p>
+                     <p>
+                        <strong>Preparation</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           Extract the template&#39;s zip file to a new folder on your desktop.
+                        </li>
+                        <li>
+                           Extract the libraries&#39; zip file to the same folder on your desktop OR if you downloaded the libraries manually, copy them to the folder on your deskop.
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Importing the project(s)</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           Open eclipse and go to&nbsp;<em>file --&gt;&nbsp;</em><em>import</em>
+                        </li>
+                        <li>
+                           Choose:&nbsp;<em>Android --&gt;&nbsp;</em><em>Existing Android Code into Workspace</em>&nbsp;and click Next.
+                        </li>
+                        <li>
+                           Now choose, select root directory --&gt; browse and browse to the place where you extracted your template &amp; libraries
+                        </li>
+                        <li>
+                           Click <em>select all </em>(there should be several items).
+                        </li>
+                        <li>
+                           Check the &ldquo;<em>copy project into workspace</em>&rdquo; checkbox.
+                        </li>
+                        <li>
+                           Click&nbsp;<em>finish</em>.
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Google Play Services</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           In Eclipse (with ADT), select Window > Android SDK Manager.
+                        </li>
+                        <li>
+                           Scroll to the bottom of the package list, expand Extras, select Google Play services, and install it. 
+                        </li>
+                        <li>
+                           Determine the location of Google Play Services: <em>ANDROID-SDK-LOCATION/extras/google/google_play_services/libproject/google-play-services_lib/</em> (in the example: My documents/development/sdk/ is the sdk location)
+                        </li>
+                        <li>
+                           Import the library project into your workspace. Click File > Import, select Android > Existing Android Code into Workspace, and browse to the location of the library project to import it.
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Link the libraries</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           Right click your library projects (slidelibrary)
+                        </li>
+                        <li>
+                           Select<em> properties --&gt; android </em>(on the left)
+                        </li>
+                        <li>
+                           Check the checkbox &quot;is library&quot;
+                        </li>
+                        <li>
+                           Now go to the &quot;Universal Application&quot; project and right click it
+                        </li>
+                        <li>
+                           Select<em> properties --&gt; android</em> (on the left)
+                        </li>
+                        <li>
+                           Click the &quot;Add..&quot; button and add the library projects &amp; the Google Play Services library
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Error solving</strong>
+                     </p>
+                     <p>
+                        <em><u>Note: You don&rsquo;t need this step if you do not have any errors (project with error looks like:&nbsp;</u></em><img border="0" height="17" src="assets/images/image_2.png" width="22"><em><u>).</u></em>
+                     </p>
+                     <ol>
+                        <li>
+                           Make sure your project is selected and go to&nbsp;<em>project --&gt;</em><em>&nbsp;clean</em>, select your project and click&nbsp;<em>clean</em>.
+                        </li>
+                        <li>
+                           <em>Right click your project --&gt;</em><em>&nbsp;properties &nbsp;--&gt;&nbsp;</em><em>Java compiler --&gt;&nbsp;</em><em>Java compliance level&nbsp;</em>and change it to 1.7
+                        </li>
+                        <li>
+                           <em>Right click your project --&gt;&nbsp;</em><em>Android tools --&gt;&nbsp;</em><em>Fix project properties</em>
+                        </li>
+                        <li>
+                           Check if you have added all libraries (in libs folder &amp; linked libraries), and if Google Play Services is succesfully linked.
+                        </li>
+                        <li>
+                           If you get &quot;Unable to resolve target&quot; you need to restart Eclipse.
+                        </li>
+                        <li>
+                           <em>Google the errors that you are getting (errors window).</em>
+                        </li>
+                        <li>
+                           <em>Get help on our FAQ.</em>
+                        </li>
+                        <li>
+                           <em>Contact us.</em>
+                        </li>
+                     </ol>
+                     <p>
+                        You have now succesfully imported your project
+                     </p>
+                  </section>
+                  <section id="configuring">
+                     <div class="page-header">
+                        <h3>Configuring</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        We are now ready to configure our template. There are 2 files we need to edit:
+                     </p>
+                     <ul>
+                        <li>
+                           SlidingMenuFragment.java this file contains the true content of our app, in this file, we will add menu items &amp; pages.&nbsp;
+                        </li>
+                        <li>
+                           Strings.xml this file contains various values, like your Api access codes &amp; your app&#39;s name.
+                        </li>
+                     </ul>
+                     <p>
+                        Also, we need to change our assets (the apps logo), and change our package name.
+                     </p>
+                     <p>
+                        <h4>Adding your content</h4>
+                     </p>
+                     <ol>
+                        <li>
+                           Open Eclipse, and in the project explorer (left pane), go to <em>Universal (or similar) --&gt; src --&gt; com.universal --&gt; slidingmenufragment.java.</em>
+                        </li>
+                        <li>
+                           Open the file and scroll to the line nr 72 that says &quot;//Tag 1 - Do not edit above this line&quot;
+                        </li>
+                        <li>
+                           Now delete all the lines between &quot;//Tag 1&quot; and &quot;//Tag 2&quot; and &quot;//Tag 2&quot; and &quot;//Tag 3&quot; and &quot;//Tag 3&quot; and &quot;//Tag 4&quot; (current content between the lines is a demo)
+                        </li>
+                        <li>
+                           Now we are going to a section, create a new line below &quot;//Tag 1&quot; and paste on of the following rule below on that line.
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+Section oGeneralSection = new Section(&quot;General&quot;, null);
+</pre>
+                        </li>
+                        <li>
+                           Now we are going to add some items to our section:
+                        </li>
+                     </ol>
+                     <ul><li>
+                     <p>
+                        Adding a Rss Feed Item (where <i>content</i> is your rss feed url):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, RssActivity.class, &quot;RSS_URL&quot;, &quot;content&quot;);</pre>
+                     </li><li><p>
+                        Adding a Twitter timeline Item (where <i>content</i> is your twitter username):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, TweetsActivity.class, &quot;TWITTER_USERNAME&quot;, &quot;content&quot;);</pre>
+                     </li><li><p>
+                        Adding a Youtube channel Item, here you can use the following as <em>content</em>:
+                        <ul><li>For a playlist, you can use your PlaylistId.</li>
+                        <li>For a channel without search functionality enabled, you should get the PlaylistId of the uploaded videos and use that.</li>
+                        <li>For a channel with search functionality, you should specify your PlaylistId and ChannelId, format like this &quot;playlistid,userid&quot; and enter it for <em>content</em>.</li></ul>
+                    	<p>Find out how to retrieve the PlaylistId for a channel as well as the ChannelId <a href="youtube_setup.html">here</a></p>
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, VideosActivity.class, &quot;YOUTUBE_CONTENT&quot;, &quot;content&quot;);</pre>
+                     </li><li><p>
+                        Adding a Webview Item (where <i>content</i> is the url you would like to load):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, WebviewActivity.class, &quot;WEB_URL&quot;, &quot;content&quot;);</pre>
+                     </li><li><p>
+                        Adding a Radio Item (where <i>content</i> is the url of the live streaming audio media):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, MediaActivity.class, &quot;RADIO_URL&quot;, &quot;content&quot;);</pre>
+                     </li><li><p>
+                        Adding a Map Item (where <i>content</i> is the url to your ):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, MapActivity.class, &quot;MAPS_CONF&quot;, &quot;content&quot;);</pre>
+                     <p></li><li><p>
+                         Adding a Wordpress Item, here you can use the following as <em>content</em>:
+                        <ul><li>For showing your recent posts, use the url to your JSON API directory ending with a &quot;/&quot;.</li>
+                        <li>For showing posts inside a certain category, you should specify your Api url and Category Slug (name) and format it like this &quot;apiurl,categoryslug&quot; and enter it for <em>content</em>.</li></ul>
+                    	<p>Learn more about installing the JSON API for Wordpress <a href="#jsonapi">here</a></p>
+                     </p>
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, WordpressActivity.class, &quot;WORDPRESS_API_URL&quot;, &quot;content&quot;);</pre>
+                     <p></li><li><p>
+                        Adding a Tumblr Item (where <i>content</i> is your tumblr username):
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oGeneralSection.addSectionItem(&quot;title&quot;, null, TumblrActivity.class, &quot;TUMBLR_USERNAME&quot;, &quot;content&quot;);</pre>
+                     <p></li></ul>
+                        You can add as many items as you would like, an example:
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+        Section oGeneralSection = new Section("General", null);
+//Tag 2
+
+        oGeneralSection.addSectionItem(&quot;NYTimes&quot;, null, TweetsActivity.class, &quot;TWITTER_USERNAME&quot;, &quot;nytimes&quot;);
+
+        oGeneralSection.addSectionItem(&quot;A Googler&quot;, null, TweetsActivity.class, &quot;TWITTER_USERNAME&quot;, &quot;google&quot;);
+
+        oGeneralSection.addSectionItem(&quot;New York Times videos&quot;, null, VideosActivity.class, &quot;YOUTUBE_CONTENT&quot;, &quot;UUqnbDFdCpuN8CMEg0VuEBqA,UCqnbDFdCpuN8CMEg0VuEBqA&quot;);
+
+        oGeneralSection.addSectionItem(&quot;Android Police&quot;, null, RssActivity.class, &quot;RSS_URL&quot;, &quot;http://feeds.feedburner.com/AndroidPolice?format=xml&quot;);
+
+        oGeneralSection.addSectionItem(&quot;Google&quot;, null, WebviewActivity.class, &quot;WEB_URL&quot;, &quot;http://google.com&quot;);
+
+//Tag 3
+        sectionList.add(oGeneralSection);</pre>
+                     <p>
+                        This example with output the a menu with 1 section, containing, 2 twitter timelines, 1 youtube item, 1 rss item &amp; 1 webview item. The url of the webview in this example is &quot;Google.com&quot; and the title of this item in the sliding menu will be called &quot;Google&quot;. So when the user clicks &quot;Google&quot; He will see the google website in a webview.
+                     </p>
+                     <p>
+                        <strong>Add More Sections</strong>
+                     </p>
+                     <p>
+                        To sort your items, you can use sections. In the example above, all items are in one section, but this is not very structured for the user.
+                     </p>
+                     <p>
+                        Add a Section (between tag 1 and 2)
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+Section oSecondSection = new Section("Section Name", null);</pre>
+                     <p>
+                        To add an item to a Section (between tag 1 and 2), simply replace oGeneralSection with your section name.
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oSecondSection.addSectionItem(......);</pre>
+                     <p>
+                        To finish, we need to add the section to the sectionList, we do this  (below tag 3)
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+sectionList.add(oSecondSection);</pre>
+                     <p>
+                        The order, in which you add sections or items to sections, does not matter. Every sections needs to have an unique name (in the sample <i>oSecondSection</i>) you can choose any type you would like <i>oVideosSection</i> for example. In the example the section is called <i>Section Name</i> but you can choose any name, just make sure it does not include invalid characters and that it is not to long.
+                     </p>
+                     <p>
+                        <h4>Customizing the app</h4>
+                     </p>
+                     <p>
+                        We now are going to change your app&#39;s name &amp; icon also, we are going to set up the template with the required Google Api codes
+                     </p>
+                     <ol>
+                        <li>
+                           Open the file strings.xml in <em>res --&gt; values&nbsp;</em>
+                        </li>
+                        <li>
+                           Enter the required value in the tag, so for example:
+                        </li>
+                        <li>
+                           <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;app_name&quot;&gt;The Awesome Band News&lt;/string&gt;</pre>
+                        </li>
+                        <li>
+                           Also, Change your apps about text, by using html code between the&nbsp;<em>&lt;![CDATA[&nbsp;</em>&nbsp;and&nbsp;<em>]]&gt;&nbsp;</em>tags.
+                        </li>
+                     </ol>
+                     <p>
+                        We also have to enter our API access keys, note that the keys for twitter &amp; youtube are required for the app to work. You only have to enter your Maps API key, if you are going to use it (add a map item).
+                     </p>
+                     <p>
+                        <strong>Setting up notifications</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           You can enter one RSS Feed (this may also be based on a youtube channel or twitter timeline) that users will be notified about when it updates with a notification.<br><br>
+                           Users can manually turn on notifications in settings in a few seconds by a simple swipe.<br><br>
+                        </li>
+                        <li>
+                           Find the line below, and replace the placeholder with your own RSS Feed url.
+                           <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;rss_push_url&quot;&gt;YOURFEEDURLHERE&lt;/string&gt;</pre>
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Entering your api keys (twitter)</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           go to&nbsp;<a href="https://dev.twitter.com/apps" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; text-decoration: none; color: rgb(0, 172, 238);" title="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a>
+                        </li>
+                        <li>
+                           it will ask you for login
+                        </li>
+                        <li>
+                           Create Application Screen
+                        </li>
+                        <li>
+                           fill the form to create application
+                        </li>
+                        <li>
+                           after create application successfully.
+                        </li>
+                        <li>
+                           On the next screen you will get your Twitter Customer Key and Twitter Customer Secret etc. under Details tab.
+                        </li>
+                        <li>
+                           Find the lines below, and enter the values like shown below:
+                        </li>
+                        <li>
+                           <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;twitter_api_consumer_key&quot;&gt;YOURCONSUMERKEYHERE&lt;/string&gt;</pre>
+                        </li>
+                        <li>
+                           <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+ &lt;string name=&quot;twitter_api_consumer_secret_key&quot;&gt;YOURSECRETKEYHERE&lt;/string&gt;</pre>
+                        </li>
+                     </ol>
+                     <p>
+                        <strong>Entering your api keys (youtube)</strong>
+                     </p>
+                     <ol>
+                        <li>
+                           For your youtube api key;&nbsp;<a href="https://developers.google.com/youtube/2.0/developers_guide_protocol#Developer_Key">https://developers.google.com/youtube/2.0/developers_guide_protocol#Developer_Key</a>
+                        </li>
+                        <li>
+                           Using the information above, you should be able to have retrieved an Android Key (based on your keystore), if the Android Key does not work, you can also create an Server Key since this should also work.
+                        </li>
+                        <li>
+                           Find the line below, and enter the the api key like shown below
+                        </li>
+                        <li>
+                           <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;youtube_api_key&quot;&gt;YOURYOUTUBEAPIKEYEHERE&lt;/string&gt;</pre>
+                        </li>
+                     </ol>
+					 <p>
+      					<strong>Entering your api keys (admob) / turning on ads</strong>
+   					</p>
+   					<div class="alert alert-warning">
+   					    <strong>Warning for Youtube users</strong><br>
+                        Google's policy on using Admob &amp; Youtube together is very strict. If you do not own the shown videos, make sure to ask permission to the respective owners before showing their videos in your app (combined with Admob).
+                    </div>
+   					<ol>
+     					<li>
+         					go to&nbsp;<a href="https://admob.com" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; text-decoration: none; color: rgb(0, 172, 238);" title="https://dev.twitter.com/apps">admob.com</a>
+      					</li>
+      					<li>
+         					Login and create a new android app.
+      					</li>
+      					<li>
+      					    Find and write down your <a href="https://support.google.com/admob/v2/answer/2784578?hl=en">publisher id</a>.
+      					</li>
+      					<li>
+         					Open the file strings.xml in <em>res --&gt; values&nbsp;</em>
+      					</li>
+      					<li>
+        				 	Enter the required value for <em>ad_id</em> and <em>ad_visibilty</em>, so for example:
+      					</li>
+      					<li>
+         <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;ad_id&quot;&gt;YOURPUBIDHERE&lt;/string&gt;
+&lt;string name=&quot;ad_visibility&quot;&gt;&#64;string/ad_on&lt;/string&gt;</pre>
+      					</li>
+  					 </ol>
+  					 <p>
+      					<strong id="maps">Configuring Maps</strong>
+   					</p>
+   					<p>
+   					     If you would like to use google maps, and have added a Google maps item to the menu, you need to configure Google Maps.
+   					</p>
+   					<ol>
+     					<li>
+         					First, you need to obtain a Google Maps api key, to obtain one, follow the step by step instructions <a href="maps_setup.html">here</a>.
+      					</li>
+      					<li>
+      					    Now where going to enter those details in strings.xml, browse to the line below, and replace the placeholder with your api key.
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;maps_api_key&quot;&gt;YOURMAPSKEYHERE&lt;/string&gt;
+</pre>
+      					</li>
+      				</ol>
+      				<u>Creating a Maps Configuration Array</u>
+      				<p>
+      				   For every google maps item you would like to add, you need to create a Google Maps Configuration Array in the strings.xml file, this stores information like the location, description, zoom level, etc. It looks something like this:
+      				
+      				<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+ &lt;string-array name=&quot;maps_1&quot;&gt;
+    &lt;item&gt;&lt;![CDATA[   
+		&lt;b&gt;Adress:&lt;/b&gt;
+		&lt;br&gt;SomeStreet 5&lt;br&gt;Sydney, Australia&lt;br&gt;&lt;br&gt;
+		&lt;i&gt;Email: Mail@Company.com&lt;/i&gt;
+    ]]&gt;&lt;/item&gt;
+    &lt;item&gt;Company&lt;/item&gt;
+    &lt;item&gt;This is where our office is.&lt;/item&gt;
+    &lt;item&gt;-33.864&lt;/item&gt;
+    &lt;item&gt;151.206&lt;/item&gt;
+    &lt;item&gt;13&lt;/item&gt;
+&lt;/string-array&gt;</pre>
+      				</p>
+      				<ol>
+      				    <li>
+      				        To get started, copy the code above and paste it in your strings.xml, make sure to give every Maps Configuration Array an unique name (in the example above "maps_1").
+      					</li>
+      					<li>
+         					We are going to edit the first item of this array, this is the description. Replace the placeholder with your own the description, you can use basic HTML. 
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;item &gt;&lt;![CDATA[ 
+&lt;b&gt;Adress:&lt;/b&gt; &lt;br&gt;SomeStreet 5&lt;br&gt;
+Sydney, Australia&lt;br&gt;&lt;br&gt; 
+&lt;i&gt;Email: Mail@Company.com&lt;/i&gt; 
+]]&gt;&lt;/item&gt;</pre>
+<p> Make sure to online edit between &quot;[CDATA[&quot; and &quot;]]&quot;</p>
+      					</li>
+      					<li>
+        				 	Now we are going to change the text that the marker will display, in the 2nd and 3rd item, replace the placeholders with your own text.
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;item &gt;Company&lt;/item&gt; 
+&lt;item &gt;This is where our office is.&lt;/item&gt;></pre>
+      					</li>
+      					<li>
+         					Now go to item 4 and 5, and replace the placeholder latitude and longitude (<a href="http://www.latlong.net">?</a>) with your own, to show a marker on the map on that location
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;item &gt;-33.864&lt;/item&gt; 
+&lt;item &gt;151.206&lt;/item&gt;</pre>
+      					</li>
+      					<li>
+        				 	Last, item 6, you can change the zoom level (default is 13):
+<pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;item &gt;13&lt;/item&gt;</pre>
+      					</li>
+  					 </ol>
+  					 <p>
+                        <b id="jsonapi">Installing the JSON Api plugin</b>
+                     </p>
+                     <ol>
+                        <li>
+                           First you will need to download the plugin, preferably the tested version, which is 1.1.1 at <a href="http://wordpress.org/plugins/json-api/developers/">http://wordpress.org/plugins/json-api/developers/</a>.
+                        </li>
+                        <li>
+                           Upload the `json-api` folder to the `/wp-content/plugins/` directory or install directly through the plugin installer.
+                        </li>
+                        <li>
+                           Activate the plugin through the 'Plugins' menu in WordPress or by using the link provided by the plugin installer.
+                        </li>
+                        <li>
+                           Enable user-friendly URLs from Settings > Permalinks, use the "Day and name" format.
+                        </li>
+                        <li>
+                           Determine your API url and use it for the Wordpress items, it will most likely be something like: &quot;yourblogurl.com/api/&quot;.
+                        </li>
+                     </ol>
+                     <p>
+                        <b>Changing the images</b>
+                     </p>
+                     <ol>
+                        <li>
+                           First you will need an app icon, it should be a .png image
+                        </li>
+                        <li>
+                           You will need to resize your icon to a 512x512 png image for google play store submission and to a 100x100 image for your app itself.
+                        </li>
+                        <li>
+                           Rename the 100x100 image to&nbsp;<i>ic_launcher.png</i>&nbsp;(make sure it does not become ic_launcher.png.png, sometimes the extension is hidden).
+                        </li>
+                        <li>
+                           Browse to your template&#39;s folder, open it and browse to &#39;res/drawable-xhdpi/&#39;
+                        </li>
+                        <li>
+                           Now replace the ic_launcher.png file thats inside this folder with&nbsp;your&nbsp;ic_launcher.png file.
+                        </li>
+                     </ol>
+                     
+                     <p>
+                        <strong>Add images to your sliding menu items (optionally)</strong>
+                     </p>
+                     <p>
+                        If you would like so, you can add images to menu items.
+                     </p>
+                     <p>
+                        First, take an .png image that you would like to use as icon for an item or section, resize it to 100x100 and place it in &nbsp;the&nbsp;<em>res --&gt; drawables&nbsp;</em>folder.
+                     </p>
+                     <p>
+                        Now, head back to the slidingmenufragment.java file and scroll to the line that says &quot;//Tag 2&quot; and browse to the item that you would like to set an icon for.
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oXXXSection.addSectionItem(&quot;xxxxx&quot;, null, xxxActivity.class, &quot;XXXXX&quot;, &quot;xxxx&quot;);</pre>
+                     <p>
+                        Now replace &nbsp;null with &quot;nameoftheimagewithoutextension&quot; so if you had the image football.png and placed it into the drawable folder. The rule will now be:
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+oXXXSection.addSectionItem(&quot;xxxxx&quot;, &quot;football&quot;, xxxActivity.class, &quot;XXXXX&quot;, &quot;xxxx&quot;);</pre>
+                     <p>
+                        Now replace the text between the second brackets, in this example: &quot;globe&quot; with &quot;nameoftheimagewithoutextension&quot; for example &quot;football&quot;
+                     </p>
+                     
+                     
+                  </section>
+                  <section id="finishing">
+                     <div class="page-header">
+                        <h3>Finishing</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        In this step, we are going to change the package name, and compile our app.
+                     </p>
+                     <p>
+                        <strong>Changing the package name</strong>
+                     </p>
+                     <p>
+                        The package name is you apps unique identifier. It is mentioned in your manifest and all your java files, and it is your project structure. Luckely Eclipse has some build in features to change the package name.
+                     </p>
+                     <p>
+                        Righ click the project --&gt; android tools --&gt; rename application package
+                     </p>
+                     <p>
+                        Now chose your package name, this is usually com.yourcompany.name
+                     </p>
+                     <p>
+                        If everything went correctly, com.universal.xxx packages in the project explorer should be changed into com.yourcompany.name, just as the package name in the manifest.
+                     </p>
+                     <div class="alert alert-info">
+                        If you would like to translate your app, go to the extras section!
+                     </div>
+                     <p>
+                        <b>Compiling our app</b>
+                     </p>
+                     <p>
+                        In this step we are going to create an&nbsp;apk, and you can run it on your phone!
+                     </p>
+                     <ol>
+                        <li>
+                           Right click your project --&gt; export
+                        </li>
+                        <li>
+                           Select android application and click next
+                        </li>
+                        <li>
+                           Follow the onscreen instructions to create a&nbsp;keystore, this is only required once. Save the&nbsp;keystore&nbsp;on a safe place, otherwise you won&rsquo;t be able to update your app.
+                        </li>
+                        <li>
+                           Export the android application to a location (desktop for example).
+                        </li>
+                     </ol>
+                     <p>
+                        You can now put this file:&nbsp;<em>Xxx.apk</em>&nbsp;on your phone, you will be prompted to check the&nbsp;<em>unknown sources&nbsp;</em>checkbox if you have not checked it already, you users won&rsquo;t have to do this if they download the app from the google play store.
+                     </p>
+                     <p>
+                        <b>Submitting to the Play Store</b>
+                     </p>
+                     <p>
+                        In this step we are going to publish your app to the Google Play store.
+                     </p>
+                     <p>
+                        <em>What you will need:</em>
+                     </p>
+                     <ol>
+                        <li>
+                           A valid Google account.
+                        </li>
+                        <li>
+                           25$ (one time)
+                        </li>
+                        <li>
+                           A credit card.
+                        </li>
+                        <li>
+                           Some Assets (screenshots, etc)
+                        </li>
+                     </ol>
+                     <p>
+                        <em>Basic instructions:</em>
+                     </p>
+                     <p>
+                        <span style="display: none;">&nbsp;</span>
+                     </p>
+                     <ol>
+                        <li>
+                           <span id="cke_bm_137S" style="display: none;">&nbsp;</span>Browse to:&nbsp;<a href="https://play.google.com/apps/publish" target="_blank">https://play.google.com/apps/publish</a>&nbsp;and follow the onscreen instructions.&nbsp;
+                        </li>
+                        <li>
+                           Click the&nbsp;<em>+Add a new app</em>&nbsp;button, enter your apps name, and upload your .apk&nbsp;file.
+                        </li>
+                        <li>
+                           Take your time to open all the tabs:&nbsp;APK, Store Listing, Pricing and Distribution, etc. and fill in at least all the required items.
+                        </li>
+                     </ol>
+                  </section>
+                  <section id="concluding">
+                     <div class="page-header">
+                        <h3>Concluding</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        We hope you have successfully submitted your app to the Google Play Store! You can always use Google Analytics to find out what part of your app your users like the best and make your content even better!
+                     </p>
+                     <p>
+                        <strong>Monitizing</strong>
+                     </p>
+                     <ul>
+                        <li>
+                           You can start making money by intergrating admob in your application, you can use our build in admob to start right away!
+                        </li>
+                        <li>
+                           If you would like to sell your app, please note that you need an extended license, also note that <strong>no matter which license you bought</strong> you can only publish one app for your or one client.
+                        </li>
+                     </ul>
+                     <p>
+                        <strong>Support</strong>
+                     </p>
+                     <p>
+                        If you get in any trouble using this guide, you can visite our support website: <a href="http://sherdle.com/support">sherdle.com/support</a>&nbsp;where you can ask questions to other users, view our FAQ &amp; more.
+                     </p>
+                     <p>
+                        <strong>License</strong>
+                     </p>
+                     <p>
+                        For more license information, open the <em>license.txt</em> file found inside your template.
+                     </p>
+                  </section>
+                  <section id="extra">
+                     <div class="page-header">
+                        <h3>Extra</h3>
+                        <hr class="notop">
+                     </div>
+                     <p>
+                        <strong>Translating</strong>
+                     </p>
+                     <p>
+                        You can easily translate this template into your own language. You only have to translate the text inside the strings.xml file. As example, I&#39;m going to translate the following string into german.
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;play_button&quot;&gt;Play&lt;/string&gt;</pre>
+                     <p>
+                        Just translate the word <em>Play</em>
+                     </p>
+                     <pre class="prettyprint lang-prettyprint lang-plain linenums linenums">
+&lt;string name=&quot;play_button&quot;&gt;Aufspielen&lt;/string&gt;</pre>
+                     <p>
+                        It&#39;s just as easy as that, just repeat this with all the strings. But be carefull with <a href="http://www.degraeve.com/reference/specialcharacters.php">special characters!&nbsp;</a>
+                     </p>
+                  </section>
+               </div>
+            </body>
+         </html>

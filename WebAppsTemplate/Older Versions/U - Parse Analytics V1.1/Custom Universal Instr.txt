@@ -1,0 +1,53 @@
+Customized UNIVERSAL template with Parse and Google Analytics (based on version 1.1)
+
+1. Parse
+
+To get parse to work, open Analytics.java (to be found in the top package)
+and browse to: Parse.initialize(.....  
+which should be somewhere around line 74)
+
+Edit it (with the dummy values replaced):
+Parse.initialize(this, "YOUR_APP_ID", "YOUR_CLIENT_KEY");
+
+Parse is now set up
+
+2. Analytics
+
+Browse to and open the app_tracker and global_tracker xml files to be found in the res/xml folder
+
+Browse and edit the string:
+<string name="ga_trackingId">YOUR_TRACKING_ID</string>
+
+Now open the Analytics.java file (to be found in the top package)
+and browse to and edit the following line:
+
+private static final String PROPERTY_ID = "YOUR_TRACKING_ID";
+
+Analytics is now set up
+
+3. Advanced Analytics
+
+By default, only the app opens (mainactivity.java) and the Rss list activity (RssActivity are tracked), if you want to track other activities
+(to be found in the com.universal.xxx.ui package) you should add the following line to the oncreate method:
+ 
+        //Get a Tracker (should auto-report)
+	  	((Analytics) getApplication()).getTracker(Analytics.TrackerName.APP_TRACKER);
+
+And  the following code before the last } of a file (within the activity class). 
+
+ @Override
+    public void onStop() {
+    	super.onStop();
+    	GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+    	
+    @Override
+    public void onStart() {
+    	super.onStart();
+    	GoogleAnalytics.getInstance(this).reportActivityStop(this);
+    }
+    
+Make sure to merge this code if there are already onstart & onstops present (you can only have 1), else, you should merge them (simply
+only copy the googleanalytics.getinsta.... part and paste it to the existing method.
+
+Again, for an example, you can look at the MainActivity or RssActivity classes

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue" 
+    android:orientation="vertical" >
+		
+           <TextView
+               android:id="@+id/welcometitle"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="10dp"
+               android:textSize="20dp"
+               style="?android:attr/listSeparatorTextViewStyle"
+               android:text="@string/welcome"
+               android:textColor="@color/white" />
+           
+            <TextView
+                android:id="@+id/welcomedescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/default_set"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+            
+              <ExpandableListView
+               android:id="@+id/slidingmenu_chose"
+               android:background="@drawable/roundedlistview"
+               android:layout_width="fill_parent"
+               android:layout_margin="20dp"
+               android:layout_height="fill_parent"
+               android:fadeScrollbars="false"
+               android:transcriptMode="alwaysScroll" />
+
+</LinearLayout>
