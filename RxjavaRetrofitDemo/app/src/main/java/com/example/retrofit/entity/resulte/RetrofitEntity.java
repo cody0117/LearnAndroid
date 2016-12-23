@@ -1,4 +1,4 @@
-package com.example.retrofit.activity;
+package com.example.retrofit.entity.resulte;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import java.util.List;
 public class RetrofitEntity {
     private int ret;
     private String msg;
-    private List<Subject> data;
+    private List<SubjectResulte> data;
 
     public int getRet() {
         return ret;
@@ -27,11 +27,11 @@ public class RetrofitEntity {
         this.msg = msg;
     }
 
-    public List<Subject> getData() {
+    public List<SubjectResulte> getData() {
         return data;
     }
 
-    public void setData(List<Subject> data) {
+    public void setData(List<SubjectResulte> data) {
         this.data = data;
     }
 }
