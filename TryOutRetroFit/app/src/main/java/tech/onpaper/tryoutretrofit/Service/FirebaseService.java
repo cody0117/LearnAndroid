@@ -1,6 +1,7 @@
 package tech.onpaper.tryoutretrofit.Service;
 
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import rx.Observable;
 import tech.onpaper.tryoutretrofit.models.Firebase;
 

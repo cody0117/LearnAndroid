@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         firebasedata.subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .map(user->"Github Username: "+user.getName()+" UrL" +user.getUrl())
-                .subscribe(userinfo->Log.d("User Info",userinfo));
+                .subscribe(userinfo->Log.d("User Info",userinfo.toString()));
 
     }
 }
