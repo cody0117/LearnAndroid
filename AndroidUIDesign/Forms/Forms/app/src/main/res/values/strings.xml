@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="form">Please complete the form below</string>
+    <string name="yourName">Enter your name</string>
+    <string name="submit">Submit</string>
+
+</resources>
