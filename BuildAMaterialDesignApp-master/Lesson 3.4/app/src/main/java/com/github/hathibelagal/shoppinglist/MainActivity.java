@@ -4,26 +4,25 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import io.realm.Sort;
+import java.util.ArrayList;
+import java.util.List;
+
+import static android.R.attr.value;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,25 +40,22 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            if(viewType == ACTIVE_VIEW) {
-                View v = getLayoutInflater().inflate(R.layout.active_item, parent, false);
-                return new ActiveItemViewHolder(v,
-                        (CheckBox)v.findViewById(R.id.item_status),
-                        (TextView)v.findViewById(R.id.item_name),
-                        (TextView)v.findViewById(R.id.item_quantity),
-                        (ImageView)v.findViewById(R.id.item_action)
-                        );
-            } else if(viewType == INACTIVE_VIEW) {
-                View v = getLayoutInflater().inflate(R.layout.inactive_item, parent, false);
-                return new InactiveItemViewHolder(v,
-                        (CheckBox)v.findViewById(R.id.item_status),
-                        (TextView)v.findViewById(R.id.item_name),
-                        (ImageView)v.findViewById(R.id.item_action)
-                );
-            } else {
-                View v = getLayoutInflater().inflate(R.layout.subheader, parent, false);
-                return new SubheaderViewHolder(v);
-            }
+
+          if (viewType == ACTIVE_VIEW) {
+            View v = getLayoutInflater().inflate(R.layout.active_item, parent, false);
+            return new ActiveItemViewHolder(v, (CheckBox) v.findViewById(R.id.item_status),
+                (TextView) v.findViewById(R.id.item_name),
+                (TextView) v.findViewById(R.id.item_quantity),
+                (ImageView) v.findViewById(R.id.item_action));
+          } else if (viewType == INACTIVE_VIEW) {
+            View v = getLayoutInflater().inflate(R.layout.inactive_item, parent, false);
+            return new InactiveItemViewHolder(v, (CheckBox) v.findViewById(R.id.item_status),
+                (TextView) v.findViewById(R.id.item_name),
+                (ImageView) v.findViewById(R.id.item_action));
+          } else {
+            View v = getLayoutInflater().inflate(R.layout.subheader, parent, false);
+            return new SubheaderViewHolder(v);
+          }
         }
 
         @Override
@@ -154,6 +150,9 @@ public class MainActivity extends AppCompatActivity {
 
         initializeDataSet();
         shoppingItems.setAdapter(shoppingItemsAdapter);
+        int[] ints = new int[]; for (int anInt : ints) {
+            Log.e();
+        }
     }
 
     private void initializeDataSet() {
@@ -179,5 +178,7 @@ public class MainActivity extends AppCompatActivity {
             initializeDataSet();
             shoppingItemsAdapter.notifyDataSetChanged();
         }
+
+
     }
 }

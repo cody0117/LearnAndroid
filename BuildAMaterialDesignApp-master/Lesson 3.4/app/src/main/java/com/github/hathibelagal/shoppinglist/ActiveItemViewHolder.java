@@ -16,6 +16,7 @@ public class ActiveItemViewHolder extends RecyclerView.ViewHolder {
     TextView itemQuantity;
     ImageView itemAction;
 
+
     public ActiveItemViewHolder(View itemView, CheckBox itemStatus, TextView itemName, TextView itemQuantity, ImageView itemAction) {
         super(itemView);
         this.itemStatus = itemStatus;
