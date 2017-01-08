@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="left|center" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txtPrinterConnect" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="left|center" android:id="@id/txtPrinterNetwork" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txtPrinterNetwork" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="left|center" android:id="@id/txtPaperWidth" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txtPaperWidth" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:paddingRight="4.0dip" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printConnect" />
+            <Spinner android:textSize="16.0sp" android:id="@id/spConnectionType" android:paddingTop="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/nameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printName" />
+            <EditText android:textSize="16.0sp" android:id="@id/printName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintName" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="textCapCharacters" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

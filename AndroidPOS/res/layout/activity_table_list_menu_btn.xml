@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_delivery" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/titleDelivery" android:layout_weight="1.0" style="@style/buttonLime" />
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_takeout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/lbTakeout" android:layout_weight="1.0" style="@style/buttonDeepPurple" />
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_order" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/titleOrderlist" android:layout_weight="1.0" style="@style/buttonMenuRed" />
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_reservation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/titleReservation" android:layout_weight="1.0" style="@style/buttonPurple" />
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_cash_drawer" android:layout_width="120.0dip" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/titleCashDrawer" style="@style/buttonMenuGreen" />
+    <Button android:textSize="16.0dip" android:ellipsize="end" android:id="@id/menu_more" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_layout_Left" android:text="@string/btnMore" android:layout_weight="1.0" style="@style/buttonLightBlue" />
+</merge>

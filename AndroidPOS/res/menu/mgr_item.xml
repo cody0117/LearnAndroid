@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/add" android:id="@id/menu_add" android:title="@string/menuAdd" app:showAsAction="always" />
+    <item android:icon="@drawable/print" android:id="@id/menu_printer" android:title="@string/lbPrinter" app:showAsAction="always" />
+    <item android:icon="@drawable/tax" android:id="@id/menu_tax" android:title="@string/menuTax" app:showAsAction="always" />
+    <item android:icon="@drawable/delete" android:id="@id/menu_delete_all" android:title="@string/menuDeleteAll" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/import_item" android:id="@id/menu_import" android:title="@string/menuImport" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/export" android:id="@id/menu_export" android:title="@string/menuExport" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/tax" android:id="@id/menu_modifier" android:title="@string/lbModifier" app:showAsAction="never" />
+    <item android:icon="@drawable/tax" android:id="@id/menu_kitchenNote" android:title="@string/lbKitchenNote" app:showAsAction="never" />
+</menu>

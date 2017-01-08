@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="52.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/textDarkGray" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbLastCloseOut" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/lastEndDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-09-10 11:55" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbCloseOutTo" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textSize="16.0sp" android:id="@id/thisEndDate" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-09-10" android:selectAllOnFocus="true" />
+                    <EditText android:textSize="16.0sp" android:id="@id/thisEndTime" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:55" android:selectAllOnFocus="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbStartingCashM" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/startCashCurrSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                    <EditText android:textSize="16.0sp" android:id="@id/startCashTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:maxLength="9" android:digits="@string/digitsPoint" android:layout_weight="1.0" android:inputType="phone" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/startCashTotalImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/calculator" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbPaidIn" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/paidInCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbPaidOut" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/paidOutCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbCashFromOrders" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/cashOrders" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbCashExpected" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/cashExpected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbEndOfDayCash" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/endCashCurrSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                    <EditText android:textSize="16.0sp" android:id="@id/endCashTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:maxLength="9" android:digits="@string/digitsPoint" android:layout_weight="1.0" android:inputType="phone" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/endCashTotalImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/calculator" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbNextStartingCashM" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:id="@id/nextCashCurrSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                    <EditText android:textSize="16.0sp" android:id="@id/nextCashTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:maxLength="9" android:digits="@string/digitsPoint" android:layout_weight="1.0" android:inputType="phone" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/nextCashTotalImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/calculator" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="left" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                    <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbDeposit" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:id="@id/cashDeposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnCloseOut" android:layout_width="wrap_content" android:text="@string/btnCloseOut" android:layout_weight="1.0" style="@style/buttonRed" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

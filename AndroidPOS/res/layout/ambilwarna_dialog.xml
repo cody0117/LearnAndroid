@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ambilwarna_viewContainer" android:paddingLeft="@dimen/ambilwarna_spacer" android:paddingTop="@dimen/ambilwarna_spacer" android:paddingRight="@dimen/ambilwarna_spacer" android:paddingBottom="@dimen/ambilwarna_spacer" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <yuku.ambilwarna.AmbilWarnaKotak android:id="@id/ambilwarna_viewSatBri" android:layout_width="@dimen/ambilwarna_hsvWidth" android:layout_height="@dimen/ambilwarna_hsvHeight" android:layout_marginLeft="@dimen/ambilwarna_spacer" android:layout_marginTop="@dimen/ambilwarna_spacer" />
+    <ImageView android:id="@id/ambilwarna_viewHue" android:layout_width="@dimen/ambilwarna_hueWidth" android:layout_height="@dimen/ambilwarna_hsvHeight" android:layout_marginLeft="@dimen/ambilwarna_spacer" android:layout_marginTop="@dimen/ambilwarna_spacer" android:layout_marginBottom="@dimen/ambilwarna_spacer" android:src="@drawable/ambilwarna_hue" android:scaleType="fitXY" android:layout_toRightOf="@id/ambilwarna_viewSatBri" android:contentDescription="@string/hue_view_content_desc" />
+    <ImageView android:id="@id/ambilwarna_cursor" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/ambilwarna_cursor" android:scaleType="matrix" android:contentDescription="@string/hue_cursor_content_desc" />
+    <ImageView android:id="@id/ambilwarna_target" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ambilwarna_target" android:scaleType="matrix" android:contentDescription="@string/color_picker_content_desc" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ambilwarna_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ambilwarna_spacer" android:layout_below="@id/ambilwarna_viewSatBri" android:layout_centerHorizontal="true">
+        <View android:id="@id/ambilwarna_warnaLama" android:background="@color/prev_color" android:layout_width="@dimen/ambilwarna_color_width" android:layout_height="@dimen/ambilwarna_color_height" />
+        <ImageView android:paddingLeft="@dimen/ambilwarna_spacer" android:paddingRight="@dimen/ambilwarna_spacer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ambilwarna_arrow_right" android:contentDescription="@string/arrow_content_desc" />
+        <View android:id="@id/ambilwarna_warnaBaru" android:background="@color/new_color" android:layout_width="@dimen/ambilwarna_color_width" android:layout_height="@dimen/ambilwarna_color_height" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#:" />
+            <LinearLayout android:gravity="center_vertical" android:background="@color/gary" android:padding="4.0dip" android:layout_width="92.0dip" android:layout_height="@dimen/ambilwarna_color_height" android:layout_marginLeft="4.0dip">
+                <EditText android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/valColor" android:background="@color/gary" android:layout_width="92.0dip" android:layout_height="wrap_content" android:maxLength="8" android:digits="@string/digitsColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_content" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/ambilwarna_spacer" android:layout_below="@id/ambilwarna_state" android:layout_alignRight="@id/ambilwarna_viewHue">
+        <Button android:id="@id/ambilwarna_btn_no" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="@*android:string/cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/ambilwarna_btn_yes" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@*android:string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

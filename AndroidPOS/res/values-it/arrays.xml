@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dateFormatList">
+        <item>1970-12-31</item>
+        <item>31-12-1970</item>
+        <item>12-31-1970</item>
+        <item>1970/12/31</item>
+        <item>31/12/1970</item>
+        <item>12/31/1970</item>
+        <item>1970.12.31</item>
+        <item>31.12.1970</item>
+        <item>12.31.1970</item>
+        <item>Jan 1, 1970</item>
+        <item>1 Jan 1970</item>
+    </string-array>
+    <string-array name="week">
+        <item>DOMENICA</item>
+        <item>LUNEDÌ</item>
+        <item>MARTEDÌ</item>
+        <item>MERCOLEDÌ</item>
+        <item>GIOVEDÌ</item>
+        <item>VENERDÌ</item>
+        <item>SABATO</item>
+    </string-array>
+    <string-array name="shortMonthNames">
+        <item>Gen</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Mag</item>
+        <item>Giu</item>
+        <item>Lug</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Ott</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="shortDayNames">
+        <item>Dom</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Gio</item>
+        <item>Ven</item>
+        <item>Sab</item>
+    </string-array>
+</resources>

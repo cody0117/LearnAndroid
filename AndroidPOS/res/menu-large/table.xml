@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/cash_register" android:id="@id/menu_cash_register" android:title="@string/menuCash" app:showAsAction="ifRoom|withText" />
+    <item android:id="@id/menu_receipt" android:title="@string/receiptTitle" app:showAsAction="never" />
+    <item android:id="@id/menu_report" android:title="@string/reportTitle" app:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:title="@string/titleSetting" app:showAsAction="never" />
+    <item android:id="@id/menu_database" android:title="@string/titleData" app:showAsAction="never" />
+    <item android:id="@id/menu_server" android:title="@string/titleServer" app:showAsAction="never" />
+    <item android:id="@id/menu_purchase" android:title="@string/menuUpgrade" app:showAsAction="never" />
+    <item android:id="@id/menu_logout" android:title="@string/menuLogout" app:showAsAction="never" />
+</menu>

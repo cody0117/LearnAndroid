@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="136" android:versionName="1.7.2.2" android:installLocation="auto" package="com.aadhk.restpos"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="com.google.android.apps.docs.sync.filemanager.FileProvider" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/icon" android:name="POSApp" android:allowBackup="true" android:hardwareAccelerated="true">
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:label="@string/app_name" android:name=".LoginActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WiFiDirectActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".TableListActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".KitchenActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".KitchenSettingActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".TakeOrderActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PaymentActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".DeliveryActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".DiscountActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ServiceFeeActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".KitchenNoteActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ReservationActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".VoidReasonActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".SplitBillActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:icon="@drawable/icon" android:name=".DatabaseActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".SettingActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ServerActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrTableActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrTableGroupActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrCategoryActivity" android:configChanges="keyboardHidden|orientation" android:uiOptions="0x1" />
+        <activity android:name=".PaymentMethodActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PayInOutActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PayCloseOutActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrItemActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ReportListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrModifierActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".OrderListActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".AboutActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PrinterActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".CompanyActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ReceiptListActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".CustomerActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".UserActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PriceScheduleActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MgrItemPickerActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".RolePermissionActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".PurchaseActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".CurrencyActivity" android:configChanges="keyboardHidden|orientation" />
+        <service android:name=".StatisticService" />
+        <service android:name=".DataTransferService" android:enabled="true" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name="com.dropbox.client2.android.AuthActivity" android:launchMode="singleTask" android:configChanges="keyboard|orientation">
+            <intent-filter>
+                <data android:scheme="db-a8lxybk98ib2i9x" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

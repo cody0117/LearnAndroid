@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefInfoTitle" android:key="prefServerInfo" android:summary="@string/prefInfoSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefPurchaseTitle" android:key="prefServerPurchase" android:summary="@string/prefPurchaseSummary" />
+</PreferenceScreen>

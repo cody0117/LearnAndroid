@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/textWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="58.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/lbTableName" />
+                    <TextView android:textSize="16.0sp" android:id="@id/tvTable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/printServer" />
+                    <TextView android:textSize="16.0sp" android:id="@id/tvServer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/lbOrderNum" />
+                    <TextView android:textSize="16.0sp" android:id="@id/tvOrderNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/lbPersonNumM" />
+                    <TextView android:textSize="16.0sp" android:id="@id/tvGuest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/printOrderTime" />
+                <TextView android:textSize="16.0sp" android:id="@id/tvOrderTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTaxNum" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/printTaxNum" />
+                <TextView android:textSize="16.0sp" android:id="@id/tvTaxNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutCustomer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/customerM" />
+                <TextView android:textSize="16.0sp" android:id="@id/tvCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutNote" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/lbNoteM" />
+                <TextView android:textSize="16.0sp" android:id="@id/tvNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/printServer" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/dotted" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutItems" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tvSplit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/printServer" />
+            <ImageView android:background="@drawable/dotted" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="8.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutSubTotal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbSubTotal" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="right" android:id="@id/tvSubTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutDiscount" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbDiscount" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvDiscount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:id="@id/tvDiscountReason" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbDiscount" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutServiceFee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbServiceFeeM" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvServiceFee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTax1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvTax1Name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printOrderTime" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvTax1Amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTax2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvTax2Name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printOrderTime" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvTax2Amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTotal" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbTotal" android:layout_weight="1.0" />
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:gravity="right" android:id="@id/tvTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tvVoid" android:paddingTop="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbVoid" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutPayments" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTax1Exclude" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvTax1ExcludeName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbTotal" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvTax1ExcludeAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutTax2Exclude" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tvTax2ExcludeName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbTotal" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/tvTax2ExcludeAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/printServer" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnPrint" android:layout_width="0.0dip" android:text="@string/btnPrint" android:layout_weight="1.0" style="@style/buttonRed" />
+            <Button android:id="@id/btnEmail" android:layout_width="0.0dip" android:text="@string/btnEmail" android:layout_weight="1.0" style="@style/buttonOrange" />
+            <Button android:id="@id/btnDelete" android:layout_width="0.0dip" android:text="@string/btnDelete" android:layout_weight="1.0" style="@style/buttonGreen" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

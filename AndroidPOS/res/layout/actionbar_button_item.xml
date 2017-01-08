@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:ellipsize="end" android:id="@id/addNote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/titleAddNote" android:singleLine="true" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+    <Button android:ellipsize="end" android:id="@id/deleteAllNote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/menuDeleteAll" android:singleLine="true" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+    <Button android:id="@id/importNote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/menuImport" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+    <Button android:id="@id/exportNote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/menuExport" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+</LinearLayout>

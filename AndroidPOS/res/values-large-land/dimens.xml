@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="crop__bar_height">56.0dip</dimen>
+    <dimen name="login_layout_top_size">56.0dip</dimen>
+    <dimen name="login_layout_bottom_size">56.0dip</dimen>
+    <dimen name="login_layout_left_size">148.0dip</dimen>
+    <dimen name="login_layout_right_size">148.0dip</dimen>
+</resources>

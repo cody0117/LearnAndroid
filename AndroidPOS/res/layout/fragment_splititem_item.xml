@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@*android:color/white" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="52.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/textBlack" android:gravity="center_vertical" android:id="@id/valName" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="name" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/textBlack" android:gravity="center_vertical" android:id="@id/valPrice" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="price" />
+        <TextView android:textColor="@color/textBlack" android:gravity="center_vertical" android:id="@id/valNum" android:layout_width="44.0dip" android:layout_height="fill_parent" android:text="num" />
+    </LinearLayout>
+    <TextView android:textColor="@color/textBlack" android:gravity="right|center" android:id="@id/valAmount" android:paddingRight="8.0dip" android:layout_width="68.0dip" android:layout_height="fill_parent" android:text="$98.00" />
+    <ImageView android:id="@id/selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/menuLayout" android:paddingLeft="@dimen/actionbar_layout_Left" android:paddingTop="@dimen/actionbar_layout_Top" android:paddingRight="@dimen/actionbar_layout_Right" android:paddingBottom="@dimen/actionbar_layout_Bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/spinnerLayout" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/actionbar_layout_Left" style="@style/buttonPurple">
+            <Spinner android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/spinner" android:animationCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/activity_table_list_menu_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/leftFragment" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/rightFragment" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

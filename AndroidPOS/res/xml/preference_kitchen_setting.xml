@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefMinutesTitle" android:key="prefMinutes" android:summary="@string/prefMinutesSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefFontSizeTitle" android:key="prefFontSize" android:summary="@string/prefFontSizeSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefRefreshTitle" android:key="prefRefresh" android:summary="@string/prefRefreshSummary" />
+</PreferenceScreen>

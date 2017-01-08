@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/txtDialogTitle" android:id="@id/dlgTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbDiscountReason" />
+            <EditText android:id="@id/reasonValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ToggleButton android:id="@id/tbDiscount" android:layout_width="100.0dip" android:layout_height="wrap_content" android:textOn="@string/lbPercentage" android:textOff="@string/lbAmount" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tvSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbPerSign" />
+            <EditText android:id="@id/signValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psHintDisAmt" android:selectAllOnFocus="true" android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/inc_update_btn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next_command_label">Save</string>
+    <string name="act_data_input_title">Enter your details:</string>
+    <string name="hello">Hello World</string>
+    <string name="app_name">Android_Sqlite</string>
+	<string name="name">Name:</string>
+	<string name="DOB">Date Of Birth:</string>
+	<string name="email">Email:</string>
+	<string name="exit_command_label">Exit</string>
+	<string name="act_label">Android Persist3</string>
+	<string name="welcome_label">Welcome</string>
+	<string name="enter_label">Enter data</string>
+	<string name="list_records_label">List records</string>
+	<string name="delete_label">Delete all records</string>
+	<string name="List_of_records_title">List of Records</string>
+	<string name="home_command_label">Home</string>
+	<string name="address">Address:</string>
+</resources>

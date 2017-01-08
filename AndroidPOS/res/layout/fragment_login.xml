@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/login_layout_left_size" android:layout_marginTop="@dimen/login_layout_top_size" android:layout_marginRight="@dimen/login_layout_right_size" android:layout_marginBottom="@dimen/login_layout_bottom_size" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/inc_login_num" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="?android:textColorHint" android:gravity="right" android:id="@id/tvLoginHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/loginHint" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="?android:textColorHint" android:id="@id/btnConnect" android:background="@drawable/bg_connected" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingRight="4.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/serverDisconnected" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/loginLogo" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:src="@drawable/login_logo" android:scaleType="fitStart" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="13.0sp" android:textColor="?android:textColorHint" android:gravity="right" android:id="@id/tvVersion" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

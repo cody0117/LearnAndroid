@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/titleStartColor" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/editLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@color/white" android:id="@id/editSearchValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hintSearchItem" android:selectAllOnFocus="true" android:textCursorDrawable="@null" />
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@id/searchList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/white_thirty" android:dividerHeight="0.100000024dip" android:layout_below="@id/editLayout" />
+</RelativeLayout>

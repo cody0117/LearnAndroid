@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="week">
+        <item>VASÁRNAP</item>
+        <item>HÉTFŐ</item>
+        <item>KEDD</item>
+        <item>SZERDA</item>
+        <item>CSÜTÖRTÖK</item>
+        <item>PÉNTEK</item>
+        <item>SZOMBAT</item>
+    </string-array>
+    <string-array name="shortMonthNames">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Már</item>
+        <item>Ápr</item>
+        <item>Máj</item>
+        <item>Jún</item>
+        <item>Júl</item>
+        <item>Aug</item>
+        <item>Szep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="shortDayNames">
+        <item>Va</item>
+        <item>Hé</item>
+        <item>Ke</item>
+        <item>Sze</item>
+        <item>Csü</item>
+        <item>Pé</item>
+        <item>Szo</item>
+    </string-array>
+</resources>

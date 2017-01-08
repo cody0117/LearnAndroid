@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="divider_list">#66000000</item>
+    <item type="drawable" name="bg_content">@drawable/color_bg</item>
+    <item type="drawable" name="bg_dialog">#ffdedede</item>
+    <item type="drawable" name="color_bg_title">#ff4c2828</item>
+    <item type="drawable" name="color_bg_summ">#ffa66b6b</item>
+    <item type="drawable" name="text_list_header">#bb000000</item>
+    <item type="drawable" name="text_list_bar">#eeffffff</item>
+    <item type="drawable" name="color_bg">#ff434a48</item>
+    <item type="drawable" name="color_bg_dialog">#ffe5ebd7</item>
+    <item type="drawable" name="divider_white">#77ffffff</item>
+    <item type="drawable" name="textcolor_white">#ffffffff</item>
+    <item type="drawable" name="textcolor_black">#ff000000</item>
+    <item type="drawable" name="color_bg_list_hd_start">#fff0f0f0</item>
+    <item type="drawable" name="color_bg_list_hd_end">#ffe0e0e0</item>
+</resources>

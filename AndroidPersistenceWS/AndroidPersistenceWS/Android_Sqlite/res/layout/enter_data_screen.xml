@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+    <TextView 
+        android:layout_height="wrap_content" 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:text="@string/act_data_input_title">
+    </TextView>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Full Name" />
+	
+	<EditText 
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:id="@+id/EditTextName"
+		android:inputType="textPersonName" />
+	
+	<TextView 
+	    android:id="@+id/TextView01" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/DOB" />
+	
+	<DatePicker
+	    android:id="@+id/DatePickerDOB"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:soundEffectsEnabled="false" />
+	
+	<TextView 
+	    android:id="@+id/TextView02" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/email"></TextView>
+
+	<EditText 
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:id="@+id/EditTextEmail"
+		android:inputType="textEmailAddress" />
+
+	<TextView
+	    android:id="@+id/TextView03"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Tell Us Something about yourself" />
+
+	<EditText
+	    android:id="@+id/EditTextDescription"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="textPostalAddress" >
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/ButtonNext"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:text="@string/next_command_label" />
+
+</LinearLayout>

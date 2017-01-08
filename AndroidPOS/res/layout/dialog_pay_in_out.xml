@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/txtDialogTitle" android:id="@id/dlgTitle" android:background="@drawable/bg_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Text" />
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbAmount" />
+            <EditText android:textSize="16.0sp" android:id="@id/moneyValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" android:maxLength="8" android:digits="@string/digitsPoint" android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbDate" />
+            <EditText android:textSize="16.0sp" android:id="@id/dateValue" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/timeValue" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbNote" />
+            <EditText android:textSize="16.0sp" android:id="@id/commentValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/linearLayout1" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/inc_update_btn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefTableGroupTitle" android:key="prefTableGroup" android:summary="@string/prefTableGroupSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefTableTitle" android:key="prefTable" android:summary="@string/prefTableSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefCategoryTitle" android:key="prefCategory" android:summary="@string/prefCategorySummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefItemTitle" android:key="prefItem" android:summary="@string/prefItemSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefModifierTitle" android:key="prefSupp" android:summary="@string/prefModifierSummary" />
+    <Preference android:layout="@layout/preference_item_pro" android:title="@string/prefPriceTitle" android:key="prefPrice" android:summary="@string/prefPriceSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefCustomerTitle" android:key="prefCustomer" android:summary="@string/prefCustomerSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefPaymentTitle" android:key="prefPayment" android:summary="@string/prefUpdateDeleteAddSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefDiscountTitle" android:key="prefDiscount" android:summary="@string/prefDiscountSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/dlgTitleServiceFree" android:key="prefServiceFee" android:summary="@string/prefUpdateDeleteAddSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefVoidReasonTitle" android:key="prefVoidReason" android:summary="@string/prefVoidReasonSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefKitchenNoteTitle" android:key="prefKitchenNote" android:summary="@string/prefKitchenNoteSummary" />
+    <PreferenceCategory android:title="@string/lbProfile" android:key="categoryProfile">
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefProfileTitle" android:key="prefCompany" android:summary="@string/prefProfileSummary" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefOrderNumTitle" android:key="prefOrderNum" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefTaxTitle" android:key="prefTax" android:summary="@string/prefTaxSummary" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefUserTitle" android:key="prefUser" android:summary="@string/prefUserSummary" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefUserPermissionTitle" android:key="prefUserPermission" android:summary="@string/prefUserPermissionSummary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbPrinter" android:key="categoryPrinter">
+        <Preference android:layout="@layout/preference_item_pro" android:title="@string/prefPrinterCashierTitle" android:key="prefPrinterCashier" />
+        <Preference android:layout="@layout/preference_item_pro" android:title="@string/prefPrinterKitchenTitle" android:key="prefPrinterKitchen" />
+        <Preference android:layout="@layout/preference_item_pro" android:title="@string/prefPrinterBarTitle" android:key="prefPrinterBar" android:summary="@string/prefPrinterBarSummary" />
+        <Preference android:layout="@layout/preference_item_pro" android:title="@string/prefPrinterKitchen2Title" android:key="prefPrinterKitchen2" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbDineIn" android:key="prefDineIn">
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefTableDefalutPersonTitle" android:key="prefTableDefaultPersonNum" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/dlgTitleServiceFree" android:key="prefDineInServiceFree" android:summary="@string/prefSummaryServiceFree" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbTakeout" android:key="prefTakeOut">
+        <Preference android:layout="@layout/preference_item" android:title="@string/dlgTitleServiceFree" android:key="prefTakeOutServiceFree" android:summary="@string/prefSummaryServiceFree" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbDelivery" android:key="prefDelivery">
+        <Preference android:layout="@layout/preference_item" android:title="@string/dlgTitleServiceFree" android:key="prefDeliveryServiceFree" android:summary="@string/prefSummaryServiceFree" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbPersonal" android:key="categoryPersonal">
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefItemFontSize" android:key="prefItemFontSize" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefOrderingOption" android:key="prefOrderingOption" android:defaultValue="false" android:summaryOn="@string/prefOrderingOn" android:summaryOff="@string/prefOrderingOff" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefCategoryStyleTitle" android:key="prefOrderStyle" android:defaultValue="false" android:summaryOn="@string/prefCategoryNewStyleOn" android:summaryOff="@string/prefCategoryOldStyleOff" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefPrintVoidOrderItem" android:key="prefPrintVoidOrderItem" android:defaultValue="true" android:summaryOn="@string/prefPrintVoidOrderItemOn" android:summaryOff="@string/prefPrintVoidOrderItemOff" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefShowVoidOrderItem" android:key="prefShowVoidOrderItem" android:defaultValue="false" android:summaryOn="@string/prefShowVoidOrderItemOn" android:summaryOff="@string/prefShowVoidOrderItemOff" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefReceiptItemSort" android:key="prefReceiptItemSort" android:defaultValue="true" android:summaryOn="@string/prefReceiptItemSortOn" android:summaryOff="@string/prefReceiptItemSortOff" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefRememberPassword" android:key="prefRememeberPassword" android:defaultValue="false" android:summaryOn="@string/prefRememberPasswordOn" android:summaryOff="@string/prefRememberPasswordOff" />
+        <ListPreference android:entries="@array/dateFormatList" android:layout="@layout/preference_item" android:title="@string/prefTitleDate" android:key="prefDateFormat" android:defaultValue="yyyy-MM-dd" android:dialogTitle="@string/prefTitleDate" android:entryValues="@array/dateFormatValues" />
+        <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefTitleTime" android:key="prefTimeFormat" android:defaultValue="false" android:summaryOn="@string/prefSummaryOnTime" android:summaryOff="@string/prefSummaryOffTime" />
+        <ListPreference android:entries="@array/lang" android:layout="@layout/preference_item" android:title="@string/prefLangTitle" android:key="prefLang" android:defaultValue="0" android:dialogTitle="@string/prefLangTitle" android:entryValues="@array/langValue" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefTranslatorTitle" android:key="prefEmailUs" android:summary="@string/prefTranslatorSummary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/appInfo" android:key="categoryInfo">
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefLogTitle" android:key="prefLog" android:summary="@string/prefLogSummary" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/menuAbout" android:key="prefAbout" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/lbHelp" android:key="prefHelp" />
+        <Preference android:layout="@layout/preference_item" android:title="@string/prefRegisterTitle" android:key="prefRegister" />
+    </PreferenceCategory>
+</PreferenceScreen>

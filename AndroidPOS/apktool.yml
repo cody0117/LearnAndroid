@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: restaurant_pos_point_of_sale-1722_wwwdownloader-apkcomapk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '11'
+  targetSdkVersion: '19'
+packageInfo:
+  cur_package: com.aadhk.restpos
+  orig_package: com.aadhk.restpos
+compressionType: false

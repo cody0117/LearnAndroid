@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <dimen name="abc_search_view_text_min_width">192.0dip</dimen>
+    <item type="dimen" name="dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="dialog_fixed_height_minor">90.0%</item>
+    <dimen name="crop__bar_height">56.0dip</dimen>
+    <dimen name="login_user_min_height">52.0dip</dimen>
+    <dimen name="table_grid_column_width">168.0dip</dimen>
+    <dimen name="table_name_text_size">16.0dip</dimen>
+    <dimen name="table_status_text_size">12.0dip</dimen>
+    <dimen name="item_grid_column_width">152.0dip</dimen>
+    <dimen name="orders_category_grid_column_width">128.0dip</dimen>
+    <dimen name="item_name_text_size">16.0dip</dimen>
+    <dimen name="item_price_text_size">14.0dip</dimen>
+    <dimen name="button_height">48.0dip</dimen>
+    <dimen name="button_text_size">20.0dip</dimen>
+    <dimen name="customer_layout_size">22.0dip</dimen>
+    <dimen name="layout_width">100.0dip</dimen>
+    <dimen name="dialog_width">480.0dip</dimen>
+    <dimen name="printer_left_width">160.0dip</dimen>
+    <dimen name="search_orders_dialog_button_width">120.0dip</dimen>
+    <dimen name="search_orders_dialog_width">500.0dip</dimen>
+    <dimen name="search_orders_dialog_height">300.0dip</dimen>
+    <dimen name="search_orders_gridview_button_size">18.0dip</dimen>
+    <dimen name="search_orders_gridview_item_size">18.0dip</dimen>
+    <dimen name="login_layout_top_size">128.0dip</dimen>
+    <dimen name="login_layout_bottom_size">128.0dip</dimen>
+    <dimen name="login_layout_left_size">56.0dip</dimen>
+    <dimen name="login_layout_right_size">56.0dip</dimen>
+    <dimen name="search_width_size">300.0dip</dimen>
+    <dimen name="gridview_marginBottom_size">0.0dip</dimen>
+    <dimen name="order_category_gridview_height_size">100.0dip</dimen>
+    <dimen name="kitchen_note_gridview_item_width">150.0dip</dimen>
+    <dimen name="printGridView_width_size">180.0dip</dimen>
+    <dimen name="printGridView_padding_left">100.0dip</dimen>
+    <dimen name="actionbar_layout_Top">4.0dip</dimen>
+    <dimen name="actionbar_layout_Bottom">4.0dip</dimen>
+    <dimen name="actionbar_layout_Left">4.0dip</dimen>
+    <dimen name="actionbar_layout_Right">4.0dip</dimen>
+    <dimen name="company_text_width">180.0dip</dimen>
+    <dimen name="payment_edit_total_size">22.0dip</dimen>
+    <dimen name="payment_edit_change_size">28.0dip</dimen>
+    <dimen name="color_value_layout_width">160.0dip</dimen>
+</resources>

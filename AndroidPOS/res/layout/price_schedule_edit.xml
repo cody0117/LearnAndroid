@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="58.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="left|center" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txtPriceSchedule" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center" android:orientation="vertical" android:paddingLeft="4.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbName" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psEnable" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psStartDate" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psEndDate" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psStartTime" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psEndTime" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16.0sp" android:id="@id/etName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+                    <CheckBox android:id="@id/cbEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:textSize="16.0sp" android:id="@id/etStartDate" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:selectAllOnFocus="true" />
+                    <EditText android:textSize="16.0sp" android:id="@id/etEndDate" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:selectAllOnFocus="true" />
+                    <EditText android:textSize="16.0sp" android:id="@id/etStartTime" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:selectAllOnFocus="true" />
+                    <EditText android:textSize="16.0sp" android:id="@id/etEndTime" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:selectAllOnFocus="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ToggleButton android:id="@id/tbDiscount" android:layout_width="100.0dip" android:layout_height="wrap_content" android:textOn="@string/lbAmount" android:textOff="@string/lbPercentage" />
+                <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tvSign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbPerSign" />
+                <EditText android:textSize="16.0sp" android:id="@id/etAmtRate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/psHintDisAmt" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btnChooseItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psChooseItem" style="?android:attr/buttonStyleSmall" />
+                <EditText android:textSize="16.0sp" android:id="@id/etChooseItem" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:selectAllOnFocus="true" />
+            </LinearLayout>
+            <com.aadhk.restpos.view.GridViewAutoWidth android:id="@id/gridLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnWidth="120.0dip" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/l4" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnSave" android:layout_width="0.0dip" android:text="@string/btnSave" android:layout_weight="0.5" style="@style/buttonRed" />
+            <Button android:id="@id/btnDelete" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/btnDelete" android:layout_weight="0.5" style="@style/buttonGreen" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
