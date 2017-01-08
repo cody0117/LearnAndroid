@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MantadiaDB/MantadiaDB.iml" filepath="$PROJECT_DIR$/MantadiaDB/MantadiaDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaDomain/MantadiaDomain.iml" filepath="$PROJECT_DIR$/MantadiaDomain/MantadiaDomain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaEMenu/MantadiaEMenu.iml" filepath="$PROJECT_DIR$/MantadiaEMenu/MantadiaEMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaKitchen/MantadiaKitchen.iml" filepath="$PROJECT_DIR$/MantadiaKitchen/MantadiaKitchen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaLibrary/MantadiaLibrary.iml" filepath="$PROJECT_DIR$/MantadiaLibrary/MantadiaLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaMobile/MantadiaMobile.iml" filepath="$PROJECT_DIR$/MantadiaMobile/MantadiaMobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MantadiaServer/MantadiaServer.iml" filepath="$PROJECT_DIR$/MantadiaServer/MantadiaServer.iml" />
+    </modules>
+  </component>
+</project>

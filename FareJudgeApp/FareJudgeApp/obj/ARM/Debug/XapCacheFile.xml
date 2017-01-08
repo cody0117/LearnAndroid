@@ -1,0 +1,20 @@
+﻿<xapCache source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Bin\ARM\Debug\FareJudgeApp_Debug_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="8/4/2014 15:05:03">
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\obj\ARM\Debug\FareJudgeApp.dll" archivePath="FareJudgeApp.dll" lastWriteTime="8/4/2014 15:05:00" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Images\delete.png" archivePath="Images\delete.png" lastWriteTime="8/4/2014 12:10:54" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Images\settings.png" archivePath="Images\settings.png" lastWriteTime="8/4/2014 12:10:54" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Images\help.png" archivePath="Images\help.png" lastWriteTime="8/4/2014 12:10:54" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Images\save.png" archivePath="Images\save.png" lastWriteTime="8/4/2014 12:10:54" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Bin\ARM\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/4/2014 15:05:01" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Bin\ARM\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Bin\ARM\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="8/4/2014 10:56:35" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 18:57:00" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\packages\sqlite-net-wp8.3.8.4.3\build\windowsphone8\ARM\Sqlite.winmd" archivePath="Sqlite.winmd" lastWriteTime="8/4/2014 14:58:39" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\packages\sqlite-net-wp8.3.8.4.3\build\windowsphone8\ARM\Sqlite.dll" archivePath="Sqlite.dll" lastWriteTime="8/4/2014 14:58:39" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\SQLite.WP80\3.8.4.3\Redist\Debug\ARM\sqlite3.dll" archivePath="sqlite3.dll" lastWriteTime="8/4/2014 12:54:33" />
+  <file source="D:\ABRS\COMP1661\Coursework 1\FareJudgeApp\FareJudgeApp\Bin\ARM\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="8/4/2014 15:05:03" />
+</xapCache>

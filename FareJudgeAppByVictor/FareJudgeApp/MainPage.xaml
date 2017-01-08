@@ -1,0 +1,251 @@
+﻿<phone:PhoneApplicationPage x:Class="FareJudgeApp.MainPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Orientation="Landscape"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            mc:Ignorable="d">
+  <!--
+    <phone:PhoneApplicationPage.ApplicationBar>
+    <shell:ApplicationBar IsVisible="True" Opacity="0.5">
+    
+    </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+  -->
+
+  <phone:PhoneApplicationPage.Resources>
+    <DataTemplate x:Key="EstablishmentItemInfoTemplate">
+
+      <StackPanel VerticalAlignment="Top"
+                  Orientation="Vertical"
+                  Tap="ContentPanel_Tap">
+        <StackPanel x:Name="ItemInfoPanel"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+        
+          <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="26"
+                         Text="id: " />
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="26"
+                         Text="{Binding Id}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="26"
+                         Text="name: " />
+              <TextBlock Margin="5,0,0,0"
+                         FontFamily="Segoe WP Semibold"
+                         FontSize="26"
+                         Text="{Binding Name}" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+              <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,0,0"
+                           FontSize="18"
+                           Text="type: " />
+                <TextBlock Margin="5,0,0,0"
+                           FontSize="18"
+                           Text="{Binding Type}" />
+              </StackPanel>
+              <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="5,0,0,0"
+                           FontSize="18"
+                           Text="phone: " />
+                <TextBlock Margin="5,0,0,0"
+                           FontSize="18"
+                           Text="{Binding Phone}" />
+              </StackPanel>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="18"
+                         Text="food: " />
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="18"
+                         Text="{Binding Food}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="18"
+                         Text="location: " />
+              <TextBlock Margin="5,0,0,0"
+                         FontSize="18"
+                         Text="{Binding Location}" />
+            </StackPanel>
+          </StackPanel>
+        </StackPanel>
+        <Border BorderBrush="DimGray" BorderThickness="1" />
+      </StackPanel>
+
+    </DataTemplate>
+
+    <DataTemplate x:Key="EstablishmentGroupHeaderTemplate">
+      <Border Background="Transparent" Padding="5">
+        <Border Width="62"
+                Height="62"
+                Margin="0,0,18,0"
+                HorizontalAlignment="Left"
+                Background="{StaticResource PhoneAccentBrush}"
+                BorderBrush="{StaticResource PhoneAccentBrush}"
+                BorderThickness="2">
+          <TextBlock HorizontalAlignment="Left"
+                     VerticalAlignment="Center"
+                     FontFamily="{StaticResource PhoneFontFamilySemiLight}"
+                     FontSize="48"
+                     Foreground="{StaticResource PhoneForegroundBrush}"
+                     Padding="6"
+                     Text="{Binding Key}" />
+        </Border>
+      </Border>
+    </DataTemplate>
+    <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter" />
+    <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter" />
+    <Style x:Key="EstablishmentJumpListStyle" TargetType="phone:LongListSelector">
+      <Setter Property="GridCellSize" Value="113,113" />
+      <Setter Property="LayoutMode" Value="Grid" />
+      <Setter Property="ItemTemplate">
+        <Setter.Value>
+          <DataTemplate>
+            <Border Width="113"
+                    Height="113"
+                    Margin="6"
+                    Background="{Binding Converter={StaticResource BackgroundConverter}}">
+              <TextBlock VerticalAlignment="Center"
+                         FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                         FontSize="48"
+                         Foreground="{Binding Converter={StaticResource ForegroundConverter}}"
+                         Padding="6"
+                         Text="{Binding Key}" />
+            </Border>
+          </DataTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+  </phone:PhoneApplicationPage.Resources>
+  <!--  LayoutRoot is the root grid where all page content is placed  -->
+  <Grid x:Name="LayoutRoot" Background="Transparent">
+    <!--  Pivot Control  -->
+    <phone:Pivot Name="MainPivot"
+                 Title="{Binding Path=LocalizedResources.ApplicationTitle,
+                                 Source={StaticResource LocalizedStrings}}"
+                 Margin="0,-10,0,10"
+                                  LoadedPivotItem="MainPivot_LoadedPivotItem">
+      <!--  Pivot item one  -->
+      <phone:PivotItem Name="pivotItem_new" Header="Establishment">
+        <ScrollViewer Name="ScrollViewerNew"
+                      Grid.Row="1"
+                      Height="Auto"
+                      VerticalScrollBarVisibility="Auto">
+          <StackPanel>
+            <TextBlock FontSize="48" Text="User ID" />
+            <TextBox x:Name="tbEstId"
+                     InputScope="Text"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Establishment Name" />
+            <TextBox x:Name="tbEstName"
+                     InputScope="Text"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Type of Establishment" />
+            <TextBox x:Name="tbEstType"
+                     InputScope="Text"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Food" />
+            <TextBox x:Name="tbEstFood"
+                     InputScope="Text"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Phone Number" />
+            <TextBox x:Name="tbEstPhone"
+                     InputScope="TelephoneNumber"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Where?" />
+            <!--<Button Click="Button_Click">
+              <TextBlock x:Name="btnGetLocation"
+                         HorizontalAlignment="Center"
+                         FontSize="30"
+                         Text="get location" />
+            </Button>-->
+            <TextBox x:Name="tbEstLocality"
+                     InputScope="Text"
+                     TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Rating" />
+            <TextBox InputScope="Text" />
+              
+          </StackPanel>
+        </ScrollViewer>
+      </phone:PivotItem>
+
+      <!--  Pivot item two  -->
+      <phone:PivotItem Name="pivotItem_list" Header="List of Establishment">
+
+        <Grid x:Name="LayoutRoota">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+
+          <!--  header  -->
+          <StackPanel Grid.Row="0"
+                      Width="{Binding ElementName=LayoutRoota,
+                                      Path=ActualWidth}"
+                      Orientation="Horizontal">
+            <TextBox Name="tbFilter"
+                     Width="{Binding ElementName=LayoutRoota,
+                                     Path=ActualWidth}"
+                     Margin="0,4,0,-4"
+                     TextChanged="tbFilter_TextChanged" />
+          </StackPanel>
+
+          <!--  LongListSelecttor binding with friends informations  -->
+
+          <Grid x:Name="ContentPanel"
+                Grid.Row="1"
+                Margin="12,0,12,0">
+                        <phone:LongListSelector x:Name="EstablishmentList"
+                                    Background="White"
+                                    Foreground="Black"
+                                    
+                                    HideEmptyGroups="True"
+                                    IsGroupingEnabled="True"
+                                    ItemTemplate="{StaticResource EstablishmentItemInfoTemplate}"
+                                    
+                                    LayoutMode="List" />
+          </Grid>
+
+        </Grid>
+
+      </phone:PivotItem>
+
+      <!--  Pivot item three  -->
+      <phone:PivotItem Name="pivotItem_upload" Header="Sync">
+        <StackPanel>
+          <TextBlock FontSize="48" Text="Sync status" />
+          <TextBlock x:Name="tbkUploadResponseCode"
+                     Text="pending..."
+                     TextWrapping="Wrap" />
+          <TextBlock FontSize="48" Text="User ID" />
+          <TextBlock x:Name="tbkUserId" TextWrapping="Wrap" />
+          <TextBlock FontSize="48" Text="Number of Record" />
+          <TextBlock x:Name="tbkNumber" TextWrapping="Wrap" />
+          <TextBlock FontSize="48" Text="Establishment" />
+          <TextBlock x:Name="tbkName" TextWrapping="Wrap" />
+        </StackPanel>
+      </phone:PivotItem>
+
+
+    </phone:Pivot>
+  </Grid>
+
+</phone:PhoneApplicationPage>

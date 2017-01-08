@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage x:Class="FareJudgeApp.View.AddReview"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Orientation="Portrait"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            mc:Ignorable="d">
+
+
+  <!--  LayoutRoot is the root grid where all page content is placed  -->
+  <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <!--  TitlePanel contains the name of the application and page title  -->
+    <StackPanel Grid.Row="0" Margin="12,0,12,0">
+      <TextBlock Name="PageHeader"
+                 Style="{StaticResource PhoneTextNormalStyle}"
+                 Text="add review" />
+      <TextBlock Name="PageTitle"
+                 Style="{StaticResource PhoneTextTitle1Style}"
+                 Text="establishment" />
+    </StackPanel>
+    <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
+      <StackPanel Grid.Row="0">
+        <TextBlock Text="date" />
+        <toolkit:DatePicker Name="dpCreateDate"
+                            ValueChanged="dpCreateDate_ValueChanged"
+                            ValueStringFormat="{}{0:yyyy/MM/dd}" />
+        <TextBlock Text="meal" />
+        <TextBox Name="tbMeal" />
+        <TextBlock Text="cost" />
+        <TextBox Name="tbCost" InputScope="Number" />
+        <TextBlock Text="comments" />
+        <TextBox Name="tbComments"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Visible" />
+        <TextBlock Text="rating" />
+        <Grid Height="72" HorizontalAlignment="Center">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+
+          <Image Name="star_1"
+                 Grid.Column="0"
+                 Margin="5,0,5,0"
+                 MouseLeftButtonDown="star_1_MouseLeftButtonDown"
+                 Source="/Images/black-star.png" />
+          <Image Name="star_2"
+                 Grid.Column="1"
+                 Margin="5,0,5,0"
+                 MouseLeftButtonDown="star_2_MouseLeftButtonDown"
+                 Source="/Images/black-star.png" />
+          <Image Name="star_3"
+                 Grid.Column="2"
+                 Margin="5,0,5,0"
+                 MouseLeftButtonDown="star_3_MouseLeftButtonDown"
+                 Source="/Images/black-star.png" />
+          <Image Name="star_4"
+                 Grid.Column="3"
+                 Margin="5,0,5,0"
+                 MouseLeftButtonDown="star_4_MouseLeftButtonDown"
+                 Source="/Images/black-star.png" />
+          <Image Name="star_5"
+                 Grid.Column="4"
+                 Margin="5,0,5,0"
+                 MouseLeftButtonDown="star_5_MouseLeftButtonDown"
+                 Source="/Images/black-star.png" />
+        </Grid>
+        <TextBlock Text="image" />
+          <Image Name="imgBox" HorizontalAlignment="Center" Margin="5,0" />
+        <TextBlock Name="tbImgPath" Text="" Visibility="Collapsed" />
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/item_delete"
+        android:title="移除黑名單號碼">
+    </item>
+    <item
+        android:id="@+id/item_update"
+        android:title="變更黑名單號碼">
+    </item>
+</menu>

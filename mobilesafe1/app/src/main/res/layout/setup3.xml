@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.設定安全號碼" />
+
+    <View style="@style/image_divideline_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:text="sim卡更換後\n警告簡訊會傳送到安全號碼上" />
+
+    
+    <EditText 
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入安全號碼或是選取一個號碼"
+        android:id="@+id/et_setup3_number"
+        />
+    <Button 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="選取聯繫人"
+        android:onClick="selectContact"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_offline_style" />
+        
+         <ImageView style="@style/image_online_style" />
+
+        <ImageView style="@style/image_offline_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            style="@style/image_logo_style"
+            android:src="@drawable/phone" />
+
+        <Button style="@style/button_next_style" />
+
+        <Button style="@style/button_pre_style" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\FareJudgeWeb.dll.config
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\FareJudgeWeb.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\FareJudgeWeb.pdb
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\Newtonsoft.Json.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Net.Http.Formatting.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Web.Http.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Web.Http.WebHost.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\Newtonsoft.Json.xml
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Net.Http.Formatting.xml
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Web.Http.xml
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\bin\System.Web.Http.WebHost.xml
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\obj\Debug\FareJudge.WebService.csprojResolveAssemblyReference.cache
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\obj\Debug\FareJudgeWeb.dll
+C:\dev\FareJudgeAppByVictor\FareJudgeWeb\obj\Debug\FareJudgeWeb.pdb

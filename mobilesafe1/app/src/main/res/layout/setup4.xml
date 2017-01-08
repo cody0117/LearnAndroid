@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.恭喜你,設定完成" />
+
+    <View style="@style/image_divideline_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:text="強烈建議您開啟防盜保護" />
+    <TextView
+        android:clickable="true"
+        android:onClick="activeDeviceAdmin"
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:text="點擊啟動deviceadmin\n(啟動後可以遠端鎖屏,清除資料)" />
+    <CheckBox
+        android:id="@+id/cb_setup4_protect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="防盜保護沒有開啟" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_online_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            style="@style/image_logo_style"
+            android:src="@drawable/setup4" />
+
+        <Button style="@style/button_next_style" 
+            android:text="設定完成"
+            />
+
+        <Button style="@style/button_pre_style" />
+    </RelativeLayout>
+</LinearLayout>

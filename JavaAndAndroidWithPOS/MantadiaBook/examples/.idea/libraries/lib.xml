@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MantadiaServer/WebContent/WEB-INF/lib/simple-xml-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/MantadiaServer/WebContent/WEB-INF/lib/mysql-connector-java-5.1.29-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

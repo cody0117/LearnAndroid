@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FareJudgeApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="reviewerID">ID* : </string>
+    <string name="EstablishmentName">Establishment Name* : </string>
+    <string name="EstablishmentType">Type of Establishment* :</string>
+    <string name="FoodType">Type of food served: </string>
+    <string name="location">Location of Establishment: </string>
+    <string name="price">Cost per person: </string>
+    <string name="date">Date of Visit:</string>
+    <string name="SubmitButton">Add</string>
+    <string name="CreateReview">Create Establishment</string>
+    <string name="listall">List all Establishments</string>
+    <string name="Search">Search and Delete</string>
+    <string name="Upload">Upload to Web Service</string>
+    <string name="ButtonMore">More</string>
+    <string name="DatabaseName">SQLiteDB</string>
+    <string name="searchable">searchable</string>
+
+</resources>

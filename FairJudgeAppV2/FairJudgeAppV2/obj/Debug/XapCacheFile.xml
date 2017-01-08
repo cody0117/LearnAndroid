@@ -1,0 +1,12 @@
+﻿<xapCache source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Bin\Debug\FairJudgeAppV2_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2014-04-26 10:03:25 PM">
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\obj\Debug\FairJudgeAppV2.dll" archivePath="FairJudgeAppV2.dll" lastWriteTime="2014-04-26 10:03:25 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2014-04-26 10:03:25 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2014-04-26 10:03:21 PM" />
+  <file source="C:\Dev\FairJudgeAppV2\FairJudgeAppV2\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2014-04-26 10:03:25 PM" />
+</xapCache>

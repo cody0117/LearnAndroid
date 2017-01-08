@@ -1,0 +1,167 @@
+﻿<phone:PhoneApplicationPage x:Class="FareJudgeApp.View.Details"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:const="clr-namespace:FareJudgeApp.Resources"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Loaded="PhoneApplicationPage_Loaded"
+                            Orientation="Landscape"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            mc:Ignorable="d">
+
+
+  <phone:PhoneApplicationPage.Resources>
+
+    <DataTemplate x:Key="ResultItemTemplate">
+      <Grid Name="ReviewItem"
+            Width="{Binding ElementName=ContentPanel,
+                            Path=ActualWidth}"
+            Margin="0,6,0,0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Row="0"
+                   Grid.RowSpan="5"
+                   Grid.Column="0"
+                   Width="72"
+                   Height="72"
+                   MaxWidth="72"
+                   MaxHeight="72"
+                   Margin="0,7,7,0"
+                   VerticalAlignment="Top"
+                   Fill="Gray" />
+        <Image Grid.Row="0"
+               Grid.RowSpan="5"
+               Grid.Column="0"
+               Width="72"
+               Height="72"
+               MaxWidth="72"
+               MaxHeight="72"
+               Margin="0,7,7,0"
+               VerticalAlignment="Top">
+          <Image.Source>
+            <BitmapImage CreateOptions="BackgroundCreation" UriSource="{Binding ImagePath}" />
+          </Image.Source>
+        </Image>
+        <StackPanel Grid.Row="0"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+          <TextBlock VerticalAlignment="Top" Text="date: " />
+          <TextBlock VerticalAlignment="Top" Text="{Binding CreateDate, StringFormat='yyyy/MM/dd'}" />
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+          <TextBlock VerticalAlignment="Top" Text="meal: " />
+          <TextBlock VerticalAlignment="Top" Text="{Binding Meal}" />
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+          <TextBlock VerticalAlignment="Top" Text="cost: " />
+          <TextBlock VerticalAlignment="Top" Text="{Binding Cost}" />
+
+        </StackPanel>
+        <StackPanel Grid.Row="3"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+          <TextBlock VerticalAlignment="Top" Text="rating: " />
+          <TextBlock VerticalAlignment="Top" Text="{Binding Rating}" />
+        </StackPanel>
+        <StackPanel Grid.Row="4"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+          <TextBlock VerticalAlignment="Top" Text="comments: " />
+          <TextBlock VerticalAlignment="Top" Text="{Binding Comments}" />
+        </StackPanel>
+      </Grid>
+    </DataTemplate>
+
+  </phone:PhoneApplicationPage.Resources>
+
+  <!--  LayoutRoot is the root grid where all page content is placed  -->
+  <Grid x:Name="LayoutRoot" Background="Transparent">
+    <!--  Pivot Control  -->
+    <phone:Pivot Name="DetailsPivot"
+                 Title="Establishment"
+                 Margin="0,-10,0,10"
+                 LoadedPivotItem="DetailsPivot_LoadedPivotItem">
+      <!--  Pivot item one  -->
+      <phone:PivotItem Name="pivotItem_detail" Header="Detail View">
+        <ScrollViewer Name="ScrollViewerNew"
+                      Grid.Row="1"
+                      Height="Auto"
+                      VerticalScrollBarVisibility="Auto">
+          <StackPanel>
+            <TextBlock FontSize="48" Text="User Id" />
+            <TextBlock x:Name="lbEstId"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Establishment" />
+            <TextBlock x:Name="lbEstName"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Type of Establishment" />
+            <TextBlock x:Name="lbEstType"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Food" />
+            <TextBlock x:Name="lbEstFood"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Phone #" />
+            <TextBlock x:Name="lbEstPhone"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+            <TextBlock FontSize="48" Text="Location" />
+            <TextBlock x:Name="lbEstLocality"
+                       FontSize="24"
+                       TextWrapping="Wrap" />
+          </StackPanel>
+        </ScrollViewer>
+      </phone:PivotItem>
+
+      <!--  Pivot item two  -->
+      <phone:PivotItem Name="pivotItem_review" Header="Reviews">
+
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="12,0,12,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+
+          <phone:LongListSelector Name="resultListBox"
+                                  Grid.Row="1"
+                                  ItemTemplate="{StaticResource ResultItemTemplate}"
+                                  ItemsSource="{Binding ReviewInfoList}"
+                                  ListFooter="{Binding}" />
+        </Grid>
+
+      </phone:PivotItem>
+
+
+
+    </phone:Pivot>
+  </Grid>
+
+
+
+
+</phone:PhoneApplicationPage>
