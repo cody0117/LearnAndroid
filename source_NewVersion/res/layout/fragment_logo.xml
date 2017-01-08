@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="top" android:orientation="vertical" android:paddingLeft="48.0dip" android:paddingTop="8.0dip" android:paddingRight="48.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/lbCompanyLogo" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lbLogo" />
+        <ImageView android:id="@id/logoImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btnDeleteLogo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btnDeleteLogo" style="@style/buttonGreen" />
+    </ScrollView>
+</RelativeLayout>

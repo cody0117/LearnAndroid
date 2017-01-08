@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gastlibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/gastlibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

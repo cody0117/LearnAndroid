@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_dialog" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_calculate" android:paddingBottom="54.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/txtDialogTitle" android:id="@id/dlgTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text" />
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/txtDialogTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbTotal" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/txtDialogTitle" android:id="@id/totalView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="0.00" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/textBanknote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/titleBanknote" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbCashCount" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/textValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbValue" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="5" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="10" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="20" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="50" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="100" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.1" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.2" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_9" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_9" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.25" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.5" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.01" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.02" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_13" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_13" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.025" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_14" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_14" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.05" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/edit_amount_15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/text_amount_value_15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0.00" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/layout_calculate">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/inc_update_btn" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

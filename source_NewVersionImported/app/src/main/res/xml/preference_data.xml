@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefAutoBackupTitle" android:key="prefAutoBackup" android:summary="@string/prefAutoBackupSummary" android:defaultValue="true" />
+    <CheckBoxPreference android:layout="@layout/preference_item" android:title="@string/prefAutoBackupDropBoxTitle" android:key="prefAutoBackupDropBox" android:summary="@string/prefAutoBackupDropBoxSummary" android:defaultValue="false" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefLinkDropBoxTitle" android:key="prefLinkDropBox" android:summary="@string/prefLinkDropBoxSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefBackupTitle" android:key="prefBackup" android:summary="@string/prefBackupSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefRestoreTitle" android:key="prefRestore" android:summary="@string/prefRestoreSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefEmailDbTitle" android:key="prefEmailDb" android:summary="@string/prefEmailDbSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefRestoreDemoTitle" android:key="prefRestoreDemo" android:summary="@string/prefRestoreDemoSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefNewRestaurantTitle" android:key="prefNewRestaurant" android:summary="@string/prefNewRestaurantSummary" />
+    <Preference android:layout="@layout/preference_item" android:title="@string/prefDeleteAllOrderTitle" android:key="prefDeleteAllOrder" android:summary="@string/prefDeleteAllOrderSummary" />
+</PreferenceScreen>

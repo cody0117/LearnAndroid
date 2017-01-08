@@ -1,0 +1,75 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        releaseCfg {
+            keyAlias 'demo_key'
+            storeFile file("demo.keystore")
+            storePassword System.getenv("DEMO_STORE_PASSWORD")
+            keyPassword System.getenv("DEMO_KEY_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.releaseCfg
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+MyProp = "This is my property"
+println project.property("MyProp")
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+
+    //  The line below is the same as above, just in "long form".  Use one or the other.
+    //compile group:'com.android.support', name:'support-v4', version:'+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':util_lib')
+}
+
+task executionTest {
+    println "Config phase test"
+
+    doLast {
+        println "Execution phase test"
+    }
+}
+
+task sampleTask {
+    println "This is a sample task definition"
+}
+
+assembleDebug << {
+    println "Action added to assembleDebug"
+}
+
+task timeDebugBuild() {
+    dependsOn assembleDebug
+    description "Show the ending time and date of the debug build"
+
+    doLast {
+        curDate = Calendar.getInstance().getTime()
+        fmt = new SimpleDateFormat("HH:mm:ss, MM-dd-yyyy")
+        println "---> Done at " + fmt.format(curDate)
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    println "---> Added task $task.name"
+}

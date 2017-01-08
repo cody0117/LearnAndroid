@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/layoutSubTotalDiscount" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:text="@string/lbSubTotal" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/edtSubTotal" style="@style/transactionRightColumn" />
+            <TextView android:textColor="@color/black" android:id="@id/tvDiscount" android:text="@string/lbDiscount" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/edtDiscount" style="@style/transactionRightColumn" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layoutGratuityTax" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.100000024dip">
+            <TextView android:textColor="@color/black" android:id="@id/tvTax" android:text="@string/lbTax" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/edtTax" style="@style/transactionRightColumn" />
+            <TextView android:textColor="@color/black" android:id="@id/tvGratuity" android:text="@string/lbGratuity" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/edtGratuity" style="@style/transactionRightColumn" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/content2" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.100000024dip" android:weightSum="2.0">
+            <TextView android:textColor="@color/black" android:text="@string/lbTotal" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="22.0sp" android:textColor="@color/black" android:id="@id/edtTotal" style="@style/transactionRightColumn" />
+            <TextView android:textColor="@color/black" android:text="@string/pay" style="@style/transactionLeftColumn" />
+            <EditText android:textSize="22.0sp" android:id="@id/edtPay" android:cursorVisible="false" android:editable="false" style="@style/transactionRightColumn" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.100000024dip">
+            <TextView android:textColor="@color/black" android:text="@string/paid" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/edtPaid" style="@style/transactionRightColumn" />
+            <TextView android:textColor="@color/black" android:text="@string/lbChange" style="@style/transactionLeftColumn" />
+            <EditText android:enabled="false" android:textSize="28.0sp" android:textColor="@color/green" android:id="@id/edtChange" style="@style/transactionRightColumn" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/vl1" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/paymentTypeLayout" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="18.0sp" android:id="@id/number7" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="7" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number8" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="8" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number9" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="9" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnDiscount" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/btnDiscount" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="20.0sp" android:id="@id/number4" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number5" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="5" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number6" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="6" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnTaxExclude" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/taxesInclude" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="20.0sp" android:id="@id/number1" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number2" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="2" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number3" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="3" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnGratuity" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/btnGratuity" android:singleLine="true" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnServiceExclude" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/btnServiceInclude" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="20.0sp" android:id="@id/number0" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/number00" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="00" android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" android:id="@id/btnPoint" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="." android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnDrawer" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/btnDrawer" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.100000024dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/clearImage" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/login_back" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/clear" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/btnClear" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnExact" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/lbExact" android:singleLine="true" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:id="@id/btnPrint" android:background="@drawable/bg_btn_number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/lbPayPrint" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/vl1">
+        <Button android:id="@id/btnPay" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:text="@string/btnPay" android:layout_weight="0.5" style="@style/buttonOrange" />
+        <Button android:id="@id/btnPayPrint" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:text="@string/btnPayPrint" android:layout_weight="0.5" style="@style/buttonRed" />
+    </LinearLayout>
+</LinearLayout>

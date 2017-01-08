@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/discountLayout" android:background="@drawable/bg_btn_number" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/textBlack" android:gravity="center_vertical" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="text" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/textBlack" android:gravity="right|center" android:id="@id/amount" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="text" android:layout_weight="1.0" />
+</LinearLayout>

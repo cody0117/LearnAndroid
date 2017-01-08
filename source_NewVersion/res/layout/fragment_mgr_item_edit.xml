@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="16.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/l2" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbItemName" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbPrice" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbModifier" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbPrinter" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbDummyTaxName" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbqty" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbIsWarn" android:layout_weight="1.0" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/varHintQtyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbWarnQty" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/l1" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/l2">
+                    <EditText android:textSize="16.0sp" android:id="@id/valItemName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="16.0sp" android:id="@id/valPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLength="9" android:layout_weight="0.5" android:inputType="numberDecimal" />
+                        <ImageButton android:id="@id/addNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+                        <ImageButton android:layout_gravity="right|center" android:id="@id/subtractNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+                    </LinearLayout>
+                    <EditText android:textSize="16.0sp" android:id="@id/valModifier" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:id="@id/valPrinter" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <EditText android:textSize="16.0sp" android:id="@id/valTax" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="16.0sp" android:id="@id/valNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                        <ImageButton android:id="@id/qtyAddNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+                        <ImageButton android:layout_gravity="right|center" android:id="@id/qtySubtractNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+                    </LinearLayout>
+                    <CheckBox android:textSize="16.0sp" android:id="@id/valHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="16.0sp" android:id="@id/valHintNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLength="3" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                        <ImageButton android:id="@id/hintAddNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+                        <ImageButton android:layout_gravity="right|center" android:id="@id/hintSubtractNumber" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/backgroundValue" android:layout_width="70.0dip" android:layout_height="wrap_content" />
+                    <Button android:id="@id/btnBackground" android:layout_width="70.0dip" android:layout_height="40.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/lbBackground" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/fontValue" android:layout_width="70.0dip" android:layout_height="wrap_content" />
+                    <Button android:id="@id/btnFontColor" android:layout_width="70.0dip" android:layout_height="40.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/lbFontColor" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <Button android:textSize="12.0sp" android:gravity="center" android:id="@id/btnPreview" android:layout_width="80.0dip" android:layout_height="40.0dip" android:text="@string/lbFontColor" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/lbPreview" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <TextView android:textSize="12.0sp" android:gravity="center" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text=" " />
+                    <Button android:textSize="12.0sp" android:textColor="@color/textDarkGray" android:gravity="center" android:id="@id/btnColorDefalut" android:layout_width="80.0dip" android:layout_height="48.0dip" android:text="@string/lbDefalut" />
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@id/linearLayout3" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnSave" android:layout_width="wrap_content" android:text="@string/btnSave" android:layout_weight="1.0" style="@style/buttonRed" />
+            <Button android:id="@id/btnDelete" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/btnDelete" android:layout_weight="1.0" style="@style/buttonGreen" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

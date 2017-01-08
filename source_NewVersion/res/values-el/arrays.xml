@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="week">
+        <item>Κυριακή</item>
+        <item>Δευτέρα</item>
+        <item>Τρίτη</item>
+        <item>Τετάρτη</item>
+        <item>Πέμπτη</item>
+        <item>Παρασκευή</item>
+        <item>Σάββατο</item>
+    </string-array>
+    <string-array name="shortMonthNames">
+        <item>ΙΑΝ</item>
+        <item>ΦΕΒ</item>
+        <item>ΜΑΡ</item>
+        <item>ΑΠΡ</item>
+        <item>ΜΑΙ</item>
+        <item>ΙΟΥΝ</item>
+        <item>ΙΟΥΛ</item>
+        <item>ΑΥΓ</item>
+        <item>ΣΕΠ</item>
+        <item>ΟΚΤ</item>
+        <item>ΝΟΕ</item>
+        <item>ΔΕΚ</item>
+    </string-array>
+    <string-array name="shortDayNames">
+        <item>ΚΥΡ</item>
+        <item>ΔΕΥ</item>
+        <item>ΤΡΙ</item>
+        <item>ΤΕΤ</item>
+        <item>ΠΕΜ</item>
+        <item>ΠΑΡ</item>
+        <item>ΣΑΒ</item>
+    </string-array>
+</resources>

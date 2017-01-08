@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleSColor">#ff31343b</color>
+    <color name="dialogTitle">#fff7b137</color>
+    <color name="bg_dialog">#ffdedede</color>
+    <color name="textBlack">#ff000000</color>
+    <color name="textWhite">#ffffffff</color>
+    <color name="textGreen">#894b8a36</color>
+    <color name="text_dialog">#ffdcdcdc</color>
+    <color name="text_bule">#ff0fa1d3</color>
+    <color name="menu_background">#ff3a3b3f</color>
+    <color name="item_select_start">#ff2cb1e1</color>
+    <color name="item_select_center">#ff24adde</color>
+    <color name="button_primary">#ffe0e0e0</color>
+    <color name="button_primary_pressed">#ff9e9a90</color>
+    <item type="color" name="button_primary_text">@*android:color/black</item>
+    <item type="color" name="button_primary_text_shadow">@*android:color/white</item>
+    <color name="button_shadow">#20000000</color>
+    <color name="button_red">#ff83381f</color>
+    <color name="button_secondary">#ffbbbbaf</color>
+    <color name="button_secondary_pressed">#ffccccbf</color>
+    <color name="button_seconary_text">#ff695e49</color>
+    <item type="color" name="button_seconary_text_shadow">@*android:color/white</item>
+    <color name="btnStartColor">#ffcdd7b6</color>
+    <color name="btnEndColor">#ff9ca18f</color>
+    <color name="btnPressedStartColor">#ff747460</color>
+    <color name="btnPressedEndColor">#ff4e4e42</color>
+    <color name="btnSelectedStartColor">#ff9ca18f</color>
+    <color name="btnSelectedEndColor">#ffcdd7b6</color>
+    <color name="btn_text">#ffffffff</color>
+    <color name="bgTitle">#ff31343b</color>
+    <color name="bgDialog">#ffdedede</color>
+    <color name="bgPurchaseTitle">#ff31343b</color>
+    <color name="bgPurchaseDialog">#ff31343b</color>
+    <color name="crop__button_bar">#fff3f3f3</color>
+    <color name="crop__button_text">#ff666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <item type="color" name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</item>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</item>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_tab_indicator_selected_color">#fff7b137</color>
+    <color name="default_tab_indicator_unselected_color">#aaf7b137</color>
+    <color name="prev_color">#ffffaaaa</color>
+    <color name="new_color">#ffaaaaff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gary">#ff9e9e9e</color>
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <item type="color" name="abc_search_url_text_selected">@*android:color/black</item>
+    <item type="color" name="abc_search_url_text_pressed">@*android:color/black</item>
+    <color name="titleStartColor">#ff31343b</color>
+    <color name="titleEndColor">#ff31343b</color>
+    <color name="bg_enable_gary">#ffdfdfdf</color>
+    <color name="bgDialogStart">#ffdedede</color>
+    <color name="bgDialogEnd">#ffdedede</color>
+    <color name="txtDialogTitle">#fff7b137</color>
+    <color name="txtDialog">#bb000000</color>
+    <color name="color_bg_start">#ff1e1e1e</color>
+    <color name="color_bg_end">#ff1e1e1e</color>
+    <color name="bgOrderItem">#21000000</color>
+    <color name="color_fontes_coffee">#ff602311</color>
+    <color name="color_fonts_orderitem">#ffffffff</color>
+    <color name="color_fonts_supplement">#ffffffff</color>
+    <color name="color_bg_summary_end">#ff2a8fbd</color>
+    <color name="color_bg_summary_start">#ff2a8fbd</color>
+    <color name="color_bg_summary_supplement_end">#ffb6b8a3</color>
+    <color name="color_bg_summary_supplement_start">#ffb6b8a3</color>
+    <color name="color_bg_summary_supplement_center">#ffdbdbdb</color>
+    <color name="bg_summ">#ff9ca18f</color>
+    <color name="bgGalleryStart">#ffe5ebd7</color>
+    <color name="bgGalleryEnd">#ffcdd7b6</color>
+    <color name="text_title_color">#fff7b137</color>
+    <color name="text_title_color_semi">#aaf7b137</color>
+    <color name="bgExportEmailStartColor">#ffffffff</color>
+    <color name="bgExportEmailEndColor">#ffffffff</color>
+    <color name="divider_export_email">#33000000</color>
+    <color name="btnItemStartColor">#fff6f9fc</color>
+    <color name="btnItemEndColor">#fff6f9fc</color>
+    <color name="btnItemSelectedStartColor">#ffa8a8a8</color>
+    <color name="btnItemSelectedEndColor">#ffa8a8a8</color>
+    <color name="btnItemPressedStartColor">#ffa8a8a8</color>
+    <color name="btnItemPressedEndColor">#ffa8a8a8</color>
+    <color name="btnItemText">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="textDarkGray">#ff444444</color>
+    <color name="bg_gray">#ffdcdcdc</color>
+    <color name="bg_gray_second">#ff555555</color>
+    <color name="textHint">#ff000000</color>
+    <color name="green_light">#ffa8d324</color>
+    <color name="yellow">#fff88c44</color>
+    <color name="item_selected">#1a000000</color>
+    <color name="background">#ff1e1e1e</color>
+    <color name="white_second">#1a000000</color>
+    <color name="white_half">#ddffffff</color>
+    <color name="white_thirty">#42ffffff</color>
+    <color name="black_second">#68000000</color>
+    <color name="grey">#ffa0a0a0</color>
+    <color name="grey_light">#ffdcdcdc</color>
+    <color name="red">#ffe51c23</color>
+    <color name="red_second">#ffb0120a</color>
+    <color name="bg_red">#ffff0000</color>
+    <color name="bg_light_red">#ffffe4e4</color>
+    <color name="green">#ff259b24</color>
+    <color name="green_second">#ff0d5302</color>
+    <color name="orange">#ffff9800</color>
+    <color name="orange_second">#ffe65100</color>
+    <color name="blue">#ff5677fc</color>
+    <color name="blue_second">#ff2a36b1</color>
+    <color name="btn_search_orders_pressed">#69008000</color>
+    <color name="btn_search_orders_normal">#6980c080</color>
+</resources>

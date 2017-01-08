@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@*android:color/black" android:gravity="center" android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/empty" />
+    <ListView android:id="@id/listView" android:background="@*android:color/white" android:paddingBottom="130.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/white" android:divider="@drawable/divider_list" android:dividerHeight="0.100000024dip" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/btnReportOkLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rpFrom" />
+                <EditText android:id="@id/startDate" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                <EditText android:id="@id/startTime" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rpTo" />
+                <EditText android:id="@id/endDate" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                <EditText android:id="@id/endTime" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/btnReportOk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btnView" style="@style/buttonRed" />
+    </LinearLayout>
+</RelativeLayout>

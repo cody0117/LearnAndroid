@@ -1,0 +1,29 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:id="@+id/ordeditemfragment">
+    <LinearLayout
+        android:id="@+id/orderitem_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity$PlaceholderFragment"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <Button
+        android:id="@+id/btnSendtoPrinter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="To Prnter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:id="@+id/OrderedTextViewed" />
+    </LinearLayout>
+</ScrollView>

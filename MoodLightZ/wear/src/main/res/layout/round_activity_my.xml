@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity"
+    tools:deviceIds="wear_round">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    <Button
+        android:id="@+id/btn_light"
+        android:layout_width="70dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:text="@string/btn_light"/>
+    <Button
+        android:id="@+id/btn_light2"
+        android:layout_width="70dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:text="@string/btn_light2"/>
+    <Button
+        android:id="@+id/btn_light3"
+        android:layout_width="70dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:text="@string/btn_light3"/>
+
+</LinearLayout>

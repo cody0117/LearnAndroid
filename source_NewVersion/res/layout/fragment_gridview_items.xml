@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gridview_marginBottom_size">
+        <GridView android:gravity="center" android:id="@id/gridview_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:columnWidth="@dimen/orders_category_grid_column_width" android:numColumns="auto_fit" />
+        <GridView android:gravity="center" android:id="@id/gridview_item" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:listSelector="#00000000" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:columnWidth="@dimen/item_grid_column_width" android:numColumns="auto_fit" android:layout_weight="8.0" />
+    </LinearLayout>
+    <Button android:id="@id/btnTakeOrder" android:text="@string/btnTakeOrder" android:layout_alignParentBottom="true" style="@style/buttonRed" />
+</RelativeLayout>

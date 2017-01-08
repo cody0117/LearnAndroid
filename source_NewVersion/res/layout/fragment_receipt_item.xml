@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/white" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/valName" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="name" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/textBlack" android:gravity="right|center" android:id="@id/valNum" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x1" />
+        <TextView android:textColor="@color/textBlack" android:gravity="right|center" android:id="@id/valPrice" android:layout_width="68.0dip" android:layout_height="wrap_content" android:text="$6.00" />
+    </LinearLayout>
+    <TextView android:textColor="@color/textBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/valRemark" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="name" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutModifier" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

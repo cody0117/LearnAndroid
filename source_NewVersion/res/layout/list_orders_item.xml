@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded" android:paddingLeft="4.0dip" android:paddingTop="20.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textColor="@color/btnItemText" android:gravity="left|center" android:id="@id/textTable" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lbTable" android:layout_weight="2.0" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/btnItemText" android:gravity="right|center" android:id="@id/check_table" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="11111" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textColor="@color/btnItemText" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lbAmount" android:layout_weight="2.0" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/btnItemText" android:gravity="right|center" android:id="@id/check_total" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="11111" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textColor="@color/btnItemText" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lbTime" android:layout_weight="2.0" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/btnItemText" android:gravity="right|center" android:id="@id/check_ordertime" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="11111" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/check_order" android:background="@drawable/rounded2" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="56.0dip" android:text="订单号" android:layout_centerHorizontal="true" android:layout_centerVertical="false" />
+</RelativeLayout>

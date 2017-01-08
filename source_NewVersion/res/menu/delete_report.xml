@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/email" android:id="@id/menu_image" app:showAsAction="always" />
+    <item android:id="@id/menu_month" android:title="@string/menuMonth" app:showAsAction="never" />
+    <item android:id="@id/menu_week" android:title="@string/menuWeek" app:showAsAction="never" />
+    <item android:id="@id/menu_day" android:title="@string/menuDay" app:showAsAction="never" />
+    <item android:id="@id/menu_custom" android:title="@string/menuCustom" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,36 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        releaseCfg {
+            keyAlias 'demo_key'
+            storeFile file("demo.keystore")
+            storePassword System.getenv("DEMO_STORE_PASSWORD")
+            keyPassword System.getenv("DEMO_KEY_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.releaseCfg
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':util_lib')
+}

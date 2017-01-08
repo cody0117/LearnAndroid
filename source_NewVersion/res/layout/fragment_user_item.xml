@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/userNameLayout" android:background="@*android:color/white" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@drawable/textcolor_black" android:gravity="center_vertical" android:id="@id/valAccount" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="text" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0sp" android:textColor="@drawable/textcolor_black" android:gravity="center_vertical" android:id="@id/valRole" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="text" android:layout_alignParentRight="true" />
+</RelativeLayout>

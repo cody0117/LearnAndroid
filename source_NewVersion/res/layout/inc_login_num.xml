@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/login_user_min_height" android:layout_marginBottom="1.0dip">
+        <EditText android:textSize="34.0dip" android:gravity="center_vertical" android:id="@id/edPassword" android:background="@color/white_half" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/login_user_min_height" android:cursorVisible="false" android:singleLine="true" android:maxLength="6" android:editable="false" android:inputType="numberPassword" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/textHint" android:gravity="center_vertical" android:id="@id/pwdHint" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/login_user_min_height" android:hint="@string/lbPassword" />
+        <ImageButton android:layout_gravity="right|center" android:id="@id/clearImage" android:background="@color/transparent" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pwddelete" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_1" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_2" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="2" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_3" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_4" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="4" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_5" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_6" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="6" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_7" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="7" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_8" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="8" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_9" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="9" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/numberBack" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/login_back" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_num_text_size" android:textStyle="bold" android:id="@id/number_0" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <View android:layout_width="1.0dip" android:layout_height="@id/number_1" />
+                    <Button android:textSize="@dimen/login_text_size" android:textStyle="bold" android:id="@id/userLogin" android:background="@drawable/bg_btn_login" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/login" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

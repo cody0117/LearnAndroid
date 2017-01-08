@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="@dimen/search_orders_dialog_width" android:layout_height="@dimen/search_orders_dialog_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/searchOrdersLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <GridView android:id="@id/searchOrdersGridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:columnWidth="@dimen/item_grid_column_width" android:numColumns="auto_fit" />
+    <TextView android:textColor="@drawable/textcolor_white" android:gravity="center" android:id="@id/valEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/empty" />
+</LinearLayout>

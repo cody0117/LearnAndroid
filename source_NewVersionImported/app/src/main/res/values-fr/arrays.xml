@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shortMonthNames">
+        <item>Jan</item>
+        <item>Fév</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aou</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+    <string-array name="shortDayNames">
+        <item>Dim</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+    </string-array>
+    <string-array name="sampleRestaurant">
+        <item>Sample Restaurant</item>
+        <item>壽司餐廳</item>
+    </string-array>
+    <string-array name="sampleRestaurantPath">
+        <item>sample1_en</item>
+        <item>sushi_tw</item>
+    </string-array>
+    <string-array name="menuTable">
+        <item>1,101,20</item>
+        <item>2,102,19</item>
+        <item>3,103,18</item>
+        <item>4,104,17</item>
+        <item>5,105,16</item>
+        <item>6,106,15</item>
+        <item>7,107,14</item>
+        <item>8,108,13</item>
+        <item>9,109,12</item>
+        <item>10,110,11</item>
+        <item>11,111,10</item>
+        <item>12,112,9</item>
+        <item>13,113,8</item>
+        <item>14,114,7</item>
+        <item>15,115,6</item>
+        <item>16,116,5</item>
+        <item>17,117,4</item>
+        <item>18,118,3</item>
+        <item>19,119,2</item>
+        <item>20,120,1</item>
+    </string-array>
+    <string-array name="menuCategory">
+        <item>1,Salads,7</item>
+        <item>2,Sandwiches,6</item>
+        <item>3,Main,5</item>
+        <item>4,Appetizers,4</item>
+        <item>5,Sweets,3</item>
+        <item>6,Drinks,2</item>
+    </string-array>
+    <string-array name="menuItem">
+        <item>1,1,Arugula,12,2,0,4,</item>
+        <item>1,2,Endive &amp;amp; Orange,13,2,0,3,</item>
+        <item>1,3,Caesar Salad,15,2,0,2,</item>
+        <item>1,4,French Green Beans,15,2,0,1,</item>
+        <item>2,5,Soup &amp;amp; Sandwich,15,2,0,5,</item>
+        <item>2,6,Chicken Breast,15,2,0,4,</item>
+        <item>2,7,House Smoked Salmon,15,2,0,3,</item>
+        <item>2,8,Prosciutto,15,2,0,2,</item>
+        <item>2,9,Fresh Fish of the Day,15,2,0,1,</item>
+        <item>3,10,Duo of Chicken,23,2,0,5,</item>
+        <item>3,11,Grilled Salmon,23,2,0,4,</item>
+        <item>3,12,Steamed Mussels &amp;amp; Clams,22,2,0,3,</item>
+        <item>3,13,Hanger Steak,27,2,0,2,</item>
+        <item>3,14,Long Island Duck Breast,27,2,0,1,</item>
+        <item>4,15,Cauliflower Gratin,15,2,0,4,</item>
+        <item>4,16,Selection of Country Style Pate,15,2,0,3,</item>
+        <item>4,17,Freshly Cut French Fries,15,2,0,2,</item>
+        <item>4,18,Grilled Octopus,15,2,0,1,</item>
+        <item>5,19,Galette with Nutella,9,2,0,5,</item>
+        <item>5,20,Caramelized Apple Crepe,10,2,0,4,</item>
+        <item>5,21,Bar Breton Brulee,8,2,0,3,</item>
+        <item>5,22,Anjou Pear,10,2,0,2,</item>
+        <item>5,23,Baba au Rhum,8,2,0,1,</item>
+        <item>6,24,Coffee,2,2,0,5,</item>
+        <item>6,25,Tea,2,2,0,4,1</item>
+        <item>6,26,Coke,2,2,0,3,1</item>
+        <item>6,27,Sprite,2,2,0,2,1</item>
+        <item>6,28,Root Beer,2,2,0,1,</item>
+    </string-array>
+    <string-array name="menuModifierGroup">
+        <item>1, Drink</item>
+    </string-array>
+    <string-array name="menuModifier">
+        <item>1,Lemon,1,1</item>
+        <item>1,Ice,0,2</item>
+    </string-array>
+    <string-array name="Semaine">
+        <item>DIMANCHE</item>
+        <item>LUNDI</item>
+        <item>MARDI</item>
+        <item>MERCREDI</item>
+        <item>JEUDI</item>
+        <item>VENDREDI</item>
+        <item>SAMEDI</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/delivery" android:id="@id/menu_takeout" android:title="@string/titleDelivery" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/takeout" android:id="@id/menu_addTakeout" android:title="@string/lbTakeout" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/order" android:id="@id/menu_order" android:title="@string/titleOrderlist" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/cash_drawer" android:id="@id/menu_cash_drawer" android:title="@string/titleCashDrawer" app:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/cash_register" android:id="@id/menu_cash_register" android:title="@string/menuCash" app:showAsAction="ifRoom|withText" />
+    <item android:id="@id/menu_receipt" android:title="@string/receiptTitle" app:showAsAction="never" />
+    <item android:id="@id/menu_report" android:title="@string/reportTitle" app:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:title="@string/titleSetting" app:showAsAction="never" />
+    <item android:id="@id/menu_database" android:title="@string/titleData" app:showAsAction="never" />
+    <item android:id="@id/menu_purchase" android:title="@string/menuUpgrade" app:showAsAction="never" />
+    <item android:id="@id/menu_logout" android:title="@string/menuLogout" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/item" android:id="@id/menu_item" android:title="@string/menuVoidOrder" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/delete" android:id="@id/menu_void" android:title="@string/menuVoidOrder" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/split" android:id="@id/menu_split" android:title="@string/menuSplit" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/print" android:id="@id/menu_reprint" android:title="@string/menuReprint" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/move" android:id="@id/menu_transfer" android:title="@string/menuTransferOrder" app:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/change_person" android:id="@id/menu_personNum" android:title="@string/menuPersonNum" app:showAsAction="ifRoom|withText" />
+</menu>

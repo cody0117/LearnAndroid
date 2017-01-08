@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/search_person" android:id="@id/menu_member" android:title="@string/customer" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/note" android:id="@id/menu_addNote" android:title="@string/lbNote" app:showAsAction="always|withText" />
+    <item android:icon="@drawable/email" android:id="@id/menu_image" android:title="@string/btnEmail" app:showAsAction="always|withText" />
+</menu>

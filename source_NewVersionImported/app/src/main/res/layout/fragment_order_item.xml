@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@*android:color/white" android:paddingRight="4.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/btnIncrease" android:layout_width="52.0dip" android:layout_height="fill_parent">
+        <ImageView android:gravity="center_vertical" android:id="@id/iVIncrease" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0px" android:src="@drawable/item_increase" />
+        <TextView android:textColor="@color/textBlack" android:gravity="center" android:id="@id/valNum" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="num" />
+    </LinearLayout>
+    <View android:background="@*android:color/darker_gray" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layoutName" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/textBlack" android:ellipsize="end" android:id="@id/valName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:maxLines="2" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/textBlack" android:id="@id/valRemark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="remark" />
+        </LinearLayout>
+        <TextView android:textColor="@color/textBlack" android:gravity="center_vertical" android:id="@id/valPrice" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="price" />
+        <View android:background="@*android:color/darker_gray" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/btnDecrease" android:layout_width="90.0dip" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/textBlack" android:gravity="right" android:id="@id/valAmount" android:layout_width="65.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="$98.00" />
+            <ImageView android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/iVDecrease" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/item_decrease" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

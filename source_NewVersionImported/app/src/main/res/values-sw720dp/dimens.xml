@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="payment_type_width">152.0dip</dimen>
+    <dimen name="login_num_text_size">28.0sp</dimen>
+    <dimen name="login_text_size">28.0sp</dimen>
+    <dimen name="login_password_text_size">40.0sp</dimen>
+    <dimen name="login_password_height">48.0sp</dimen>
+</resources>

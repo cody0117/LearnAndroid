@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:windowSoftInputMode="stateHidden|adjustResize">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/l3" android:paddingLeft="8.0dip" android:paddingTop="16.0dip" android:paddingRight="8.0dip" android:paddingBottom="48.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/l2" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customerTel" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customerName" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbApt" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbStreet" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbCity" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbEmail" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/l1" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/l2">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <AutoCompleteTextView android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerTel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" android:maxLength="20" android:digits="@string/digits" android:phoneNumber="true" android:completionHintView="@string/lbPhoneNum" android:completionThreshold="1" android:layout_weight="1.0" android:inputType="phone" android:dropDownHorizontalOffset="10.0dip" android:textCursorDrawable="@null" />
+                            <ImageButton android:id="@id/phoneQuery" android:background="@drawable/bg_btn_delivery" android:layout_width="48.0dip" android:layout_height="40.0dip" android:src="@*android:drawable/ic_menu_search" android:scaleType="fitCenter" />
+                        </LinearLayout>
+                        <EditText android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msgCustomerName" android:singleLine="true" android:maxLength="20" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                        <EditText android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerApt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintApt" android:singleLine="true" android:maxLength="45" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                        <EditText android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerStreet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/lbStreet" android:singleLine="true" android:maxLength="45" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                        <EditText android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerCity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/lbCity" android:singleLine="true" android:maxLength="45" android:layout_weight="1.0" android:textCursorDrawable="@null" />
+                        <EditText android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/customerEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/lbEmailAddress" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" android:inputType="textEmailAddress" android:textCursorDrawable="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/radDelivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:checked="true" android:text="@string/lbDelivery" />
+                        <RadioButton android:textSize="@dimen/customer_layout_size" android:textColor="@color/white" android:id="@id/radPickup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/lbPickup" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/customer_layout_size" android:id="@id/btnSave" android:layout_width="wrap_content" android:text="@string/btnConfirm" android:layout_weight="1.0" style="@style/buttonRed" />
+                <Button android:textSize="@dimen/customer_layout_size" android:id="@id/btnCancel" android:layout_width="wrap_content" android:text="@string/btnCancel" android:layout_weight="1.0" style="@style/buttonGreen" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

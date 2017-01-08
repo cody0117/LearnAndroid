@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/bg_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:windowSoftInputMode="stateHidden|adjustResize">
+        <ScrollView android:id="@id/s1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/l3" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/fragment_printer_header" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/printModelLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printModel" />
+                    <EditText android:textSize="16.0sp" android:id="@id/printModel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintModel" android:singleLine="true" android:layout_weight="1.0" android:inputType="textCapCharacters" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/printIpLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printIp" />
+                    <EditText android:textSize="16.0sp" android:id="@id/printIp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintIpAddress" android:singleLine="true" android:maxLength="30" android:digits="@string/digitsPoint" android:layout_weight="1.0" android:inputType="phone" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/printPortLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printPort" />
+                    <EditText android:textSize="16.0sp" android:id="@id/printPort" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintPort" android:singleLine="true" android:maxLength="5" android:digits="@string/digits" android:layout_weight="1.0" android:inputType="phone" />
+                </LinearLayout>
+                <include layout="@layout/fragment_printer_content" />
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/fragment_printer_button" />
+    </RelativeLayout>
+</LinearLayout>

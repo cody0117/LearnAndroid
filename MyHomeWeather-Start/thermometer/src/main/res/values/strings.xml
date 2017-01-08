@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyHomeWeather</string>
+    <string name="hello">%s online!</string>
+    <string name="hello_relayr">Please Log In</string>
+    <string name="action_log_in">Log in to RelayR</string>
+    <string name="action_log_out">Log out of RelayR</string>
+    <string name="successfully_logged_in">You were successfully logged in!</string>
+    <string name="successfully_logged_out">You were successfully logged out!</string>
+    <string name="unsuccessfully_logged_in">There was a problem in the log in.</string>
+    <string name="something_went_wrong">Oops! Something went wrong</string>
+    <string name="title_temperature">Temperature/Humidity</string>
+
+</resources>

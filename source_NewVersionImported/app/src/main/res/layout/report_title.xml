@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewDotted" android:background="@drawable/dotted" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/title" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="aaa" />
+    <TextView android:gravity="center" android:id="@id/textEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty" />
+</LinearLayout>

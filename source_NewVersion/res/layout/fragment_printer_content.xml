@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/printHeaderLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printHeader" />
+        <EditText android:textSize="16.0sp" android:gravity="top|left|center" android:id="@id/printHeader" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/hintPrintHeader" android:maxLines="5" android:lines="4" android:minLines="4" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/printFooterLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printFooter" />
+        <EditText android:textSize="16.0sp" android:gravity="top|left|center" android:id="@id/printFooter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/hintPrintFooter" android:maxLines="3" android:lines="2" android:minLines="2" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printFontSize" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/printFontSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintFontSize" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/fontAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/fontSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/printerNumLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printCopy" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/printerNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintNum" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/printerNumAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/printerNumSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/paperWidth" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/printPaperWidth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPaperWidth" android:singleLine="true" android:maxLength="3" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/paperWidthAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/paperWidthSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/marginTopLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/marginTop" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/etMarginTop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintMarginTop" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/marginTopAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/marginTopSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/marginBottomLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/marginBottom" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/etMarginBottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintMarginBottom" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/marginBottomAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/marginBottomSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/marginLeftLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/marginLeft" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/etMarginLeft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintMarginLeft" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/marginLeftAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/marginLeftSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/marginRightLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/marginRight" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16.0sp" android:id="@id/etMarginRight" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintMarginRight" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+            <ImageButton android:id="@id/marginRightAdd" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/increase" android:scaleType="center" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/marginRightSubtract" android:background="@drawable/bg_btn_increase_decrease" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/decrease" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/commInitialLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printCommInitial" />
+        <EditText android:textSize="16.0sp" android:id="@id/commInitial" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintCommInitial" android:singleLine="true" android:digits="@string/digitsHex" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/commCutLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printCommCut" />
+        <EditText android:textSize="16.0sp" android:id="@id/commCut" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintCommCut" android:singleLine="true" android:digits="@string/digitsHex" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/drawerCommLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="wrap_content" android:text="@string/printCommDrawer" android:lines="3" />
+        <EditText android:textSize="16.0sp" android:id="@id/commDrawer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintPrintCommDrawer" android:singleLine="true" android:digits="@string/digitsHex" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/beepLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/commBuzzer" />
+        <EditText android:textSize="16.0sp" android:id="@id/commBeep" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="@string/hintCommBuzzer" android:singleLine="true" android:digits="@string/digitsHex" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="wrap_content" android:text="@string/printEnable" />
+            <CheckBox android:id="@id/enablePrint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/enableBeepLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="@*android:color/darker_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="16.0dip" />
+                <TextView android:textColor="@color/textDarkGray" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/enableBuzzer" />
+                <CheckBox android:id="@id/enableBeep" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/printSeparateLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/printSeparate" />
+                <CheckBox android:id="@id/printSeparate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/tipLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/textDarkGray" android:gravity="right|center" android:layout_width="@dimen/printer_left_width" android:layout_height="fill_parent" android:text="@string/enableTip" />
+                <CheckBox android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnTestConnect" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/btnTestConnect" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnPreview" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/btnPreview" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnLogo" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/lbLogo" android:layout_weight="1.0" style="@android:style/Widget.Button" />
+    </LinearLayout>
+</LinearLayout>
