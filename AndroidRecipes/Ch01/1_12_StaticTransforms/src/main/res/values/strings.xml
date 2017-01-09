@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">StaticTransforms</string>
-    <string name="label_perspective">Static Transform</string>
-    <string name="label_scroll">Transform Scroller</string>
-</resources>
