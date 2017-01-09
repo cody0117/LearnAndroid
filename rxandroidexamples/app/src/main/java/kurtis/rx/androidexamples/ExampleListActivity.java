@@ -50,6 +50,11 @@ public class ExampleListActivity extends AppCompatActivity {
         new ExampleActivityAndName(Example7Activity.class, "Example 7: Rx Playground"));
     exampleActivityAndNames.add(
         new ExampleActivityAndName(Example8Activity.class, "Example 8: About Box"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(EventActivity.class, "Example 9: Clicks Events"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(ButterknifeActivity.class, "Example 10: Butterknife"));
+
 
     return exampleActivityAndNames;
   }

@@ -55,6 +55,14 @@
         android:name=".Example8Activity"
         android:parentActivityName=".ExampleListActivity"
         />
+    <activity
+        android:name=".EventActivity"
+        android:parentActivityName=".ExampleListActivity"
+        />
+    <activity
+        android:name=".ButterknifeActivity"
+        android:parentActivityName=".ExampleListActivity"
+        />
   </application>
 
 </manifest>

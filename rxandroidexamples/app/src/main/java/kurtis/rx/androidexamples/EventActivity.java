@@ -7,10 +7,12 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnLongClick;
 
-public class Example8Activity extends AppCompatActivity {
+public class EventActivity extends AppCompatActivity {
 
-  @BindView(R.id.Aboutbtn) Button Aboutbtn;
+  @BindView(R.id.button) Button button;
+
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class Example8Activity extends AppCompatActivity {
 
   private void configureLayout() {
 
-    setContentView(R.layout.activity_aboutbox);
+    setContentView(R.layout.events);
     ButterKnife.bind(this);
   }
 
@@ -28,9 +30,19 @@ public class Example8Activity extends AppCompatActivity {
     super.onDestroy();
   }
 
-  @OnClick(R.id.Aboutbtn) public void onClick() {
-    Toast.makeText(Example8Activity.this, "Click", Toast.LENGTH_SHORT).show();
-    AboutBox.Show(Example8Activity.this);
 
+  @OnClick(R.id.button) public void onClick() {
+    Toast.makeText(EventActivity.this, "onClick Happen", Toast.LENGTH_SHORT).show();
   }
+
+
+
+
+
+  @OnLongClick(R.id.button) boolean onLongClick() {
+    Toast.makeText(EventActivity.this, "OnLong Clikc Happen", Toast.LENGTH_SHORT).show();
+    return true;
+  }
+
+
 }
