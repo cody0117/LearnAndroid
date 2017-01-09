@@ -48,6 +48,8 @@ public class ExampleListActivity extends AppCompatActivity {
         new ExampleActivityAndName(Example6Activity.class, "Example 6: City Search"));
     exampleActivityAndNames.add(
         new ExampleActivityAndName(Example7Activity.class, "Example 7: Rx Playground"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(Example8Activity.class, "Example 8: About Box"));
 
     return exampleActivityAndNames;
   }
