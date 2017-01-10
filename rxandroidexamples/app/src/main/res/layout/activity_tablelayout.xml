@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Note for TableLayout
+    * Table can leave cells empty
+    * width of the column is defined by the row with the widest cell
+    can not change the width as its always match_parent for the TableLayout
+    public LayoutParams(int w, int h) { super(MATCH_PARENT, h); }
+    * TableRow also extends LinearLayout-->
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tablelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kurtis.rx.androidexamples.tablelayout"
+    >
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <!--This is right-->
+    <TextView
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        />
+    <!--This is on the left-->
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <CheckBox android:text="Remember Me"/>
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <TextView/>
+    <!--Add the textView so I can make it to the right-->
+    <Button android:text="Login"/>
+  </TableRow>
+
+</TableLayout>
+

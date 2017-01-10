@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:layout_alignParentTop – use this attribute to fix the View at the top of the RelativeLayout
+
+    android:layout_alignParentLeft – use this attribute to align View on the left
+
+    android:layout_alignParentRight – use this attribute to align View on the right
+
+    android:layout_alignTop – use this attribute to align View on the top of some other view
+
+    android:layout_alignBottom – use this attribute to align View on the bottom of some other view
+
+    android:layout_alignStart – use this attribute to align View on the start of some other view
+
+    android:layout_alignEnd – use this attribute to align View on the start of some other view-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
