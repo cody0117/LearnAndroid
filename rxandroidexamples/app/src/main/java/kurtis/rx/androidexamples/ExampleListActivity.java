@@ -54,6 +54,14 @@ public class ExampleListActivity extends AppCompatActivity {
         new ExampleActivityAndName(EventActivity.class, "Example 9: Clicks Events"));
     exampleActivityAndNames.add(
         new ExampleActivityAndName(ButterknifeActivity.class, "Example 10: Butterknife"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(Fronts.class, "Example 10: Use SP for Fonts"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(linearlayout.class, "Example 10: Use of Linear Layout"));
+
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(Relativelayout.class, "Example 10: Use of RelativeLayout"));
+
 
 
     return exampleActivityAndNames;
