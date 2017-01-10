@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_scoll_view"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,6 +12,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kurtis.rx.androidexamples.ScollView"
     >
+  <TextView
+      android:text="Scoll View with ListView "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
   <ListView
       android:layout_width="match_parent"
       android:layout_height="200dp"
@@ -28,14 +34,6 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       >
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp"
-        ></LinearLayout>
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -45,21 +43,41 @@
 
       <TextView
           android:text="Text 1"
-          android:layout_width="70dp"
-          android:layout_height="wrap_content"
+          android:textSize="40dp"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"
+          android:background="@color/colorPrimaryDark"
           />
       <TextView
           android:text="Text 2"
-          android:layout_width="70dp"
-          android:layout_height="wrap_content"
+          android:textSize="40dp"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"
+          android:background="@color/colorPrimaryDark"
           />
+
       <TextView
           android:text="Text 3"
-          android:layout_width="70dp"
-          android:layout_height="wrap_content"
+          android:textSize="40dp"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"
+          android:background="@color/colorPrimaryDark"
           />
       <TextView
           android:text="Text 4"
+          android:textSize="40dp"
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"
+          android:background="@color/colorPrimaryDark"
+          />
+
+      <TextView
+          android:text="Text 5"
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          />
+      <TextView
+          android:text="Text 6"
           android:layout_width="70dp"
           android:layout_height="wrap_content"
           />

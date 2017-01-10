@@ -63,7 +63,9 @@ public class ExampleListActivity extends AppCompatActivity {
         new ExampleActivityAndName(Relativelayout.class, "Example 10: Use of RelativeLayout"));
     exampleActivityAndNames.add(
         new ExampleActivityAndName(tablelayout.class, "Example 10: Use of Table Layout"));
-    new ExampleActivityAndName(ScollView.class, "Example 10: Use of Table Layout"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(ScollView.class, "Example 10: Use of ScrollView"));
+
 
 
     return exampleActivityAndNames;
