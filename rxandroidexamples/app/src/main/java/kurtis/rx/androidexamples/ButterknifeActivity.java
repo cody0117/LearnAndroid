@@ -45,7 +45,7 @@ public class ButterknifeActivity extends AppCompatActivity  {
 
     //There is lot other approach
 
-  //@OnCheckedChanged
+  //@OnCheckedChanged()
   //@OnClick
    //OnEditorAction
    //OnFocusChange

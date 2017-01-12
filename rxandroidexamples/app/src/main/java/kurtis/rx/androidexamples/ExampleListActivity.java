@@ -35,7 +35,7 @@ public class ExampleListActivity extends AppCompatActivity {
   private static List<ExampleActivityAndName> getExamples() {
     List<ExampleActivityAndName> exampleActivityAndNames = new ArrayList<>();
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(Example1Activity.class, "Example 1: Simple Color List"));
+        new ExampleActivityAndName(Example1Activity.class, "Example 1: Simple Color List with RxJava"));
     exampleActivityAndNames.add(
         new ExampleActivityAndName(Example2Activity.class, "Example 2: Favorite Tv Shows"));
     exampleActivityAndNames.add(new ExampleActivityAndName(Example3Activity.class,
@@ -66,7 +66,7 @@ public class ExampleListActivity extends AppCompatActivity {
     exampleActivityAndNames.add(
         new ExampleActivityAndName(ScollView.class, "Example 15: Use of ScrollView"));
     exampleActivityAndNames.add(
-    new ExampleActivityAndName(communication.class, "Example 15: Use of ScrollView"));
+    new ExampleActivityAndName(communication.class, "Example 16: Communication with Users"));
 
 
 
