@@ -53,8 +53,13 @@
     </activity>
     <activity android:name=".tablelayout">
     </activity>
-    <activity android:name=".ScollView"
-        android:parentActivityName=".ExampleListActivity" >
+    <activity
+        android:name=".ScollView"
+        android:parentActivityName=".ExampleListActivity">
+    </activity>
+    <activity android:name=".communication">
+    </activity>
+    <activity android:name=".ToastActivity">
     </activity>
   </application>
 

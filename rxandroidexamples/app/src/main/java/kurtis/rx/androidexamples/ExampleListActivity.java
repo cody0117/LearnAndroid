@@ -55,16 +55,18 @@ public class ExampleListActivity extends AppCompatActivity {
     exampleActivityAndNames.add(
         new ExampleActivityAndName(ButterknifeActivity.class, "Example 10: Butterknife"));
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(Fronts.class, "Example 10: Use SP for Fonts"));
+        new ExampleActivityAndName(Fronts.class, "Example 11: Use SP for Fonts"));
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(linearlayout.class, "Example 10: Use of Linear Layout"));
+        new ExampleActivityAndName(linearlayout.class, "Example 12: Use of Linear Layout"));
 
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(Relativelayout.class, "Example 10: Use of RelativeLayout"));
+        new ExampleActivityAndName(Relativelayout.class, "Example 13: Use of RelativeLayout"));
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(tablelayout.class, "Example 10: Use of Table Layout"));
+        new ExampleActivityAndName(tablelayout.class, "Example 14: Use of Table Layout"));
     exampleActivityAndNames.add(
-        new ExampleActivityAndName(ScollView.class, "Example 10: Use of ScrollView"));
+        new ExampleActivityAndName(ScollView.class, "Example 15: Use of ScrollView"));
+    exampleActivityAndNames.add(
+    new ExampleActivityAndName(communication.class, "Example 15: Use of ScrollView"));
 
 
 
