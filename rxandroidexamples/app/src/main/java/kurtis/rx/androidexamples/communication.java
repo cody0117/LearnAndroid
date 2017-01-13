@@ -33,6 +33,7 @@ public class communication extends AppCompatActivity {
           startActivity(new Intent(this,ToastActivity.class ));
         break;
       case R.id.btnLanchSnackBar:
+        startActivity(new Intent(this, SnackBarActivity.class));
         break;
       case R.id.btnLanuchDialog:
         break;

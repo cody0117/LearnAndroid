@@ -61,6 +61,8 @@
     </activity>
     <activity android:name=".ToastActivity">
     </activity>
+    <activity android:name=".SnackBarActivity">
+    </activity>
   </application>
 
 </manifest>
