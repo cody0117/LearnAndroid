@@ -67,6 +67,8 @@ public class ExampleListActivity extends AppCompatActivity {
         new ExampleActivityAndName(ScollView.class, "Example 15: Use of ScrollView"));
     exampleActivityAndNames.add(
     new ExampleActivityAndName(communication.class, "Example 16: Communication with Users"));
+    exampleActivityAndNames.add(
+        new ExampleActivityAndName(BasicElement.class, "Example 17: Us eof basic element"));
 
 
 

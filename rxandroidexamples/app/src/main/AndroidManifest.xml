@@ -63,6 +63,10 @@
     </activity>
     <activity android:name=".SnackBarActivity">
     </activity>
+    <activity android:name=".Tab">
+    </activity>
+    <activity android:name=".BasicElement">
+    </activity>
   </application>
 
 </manifest>
