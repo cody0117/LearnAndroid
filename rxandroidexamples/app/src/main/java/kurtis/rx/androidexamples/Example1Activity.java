@@ -16,6 +16,8 @@ public class Example1Activity extends AppCompatActivity {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
+    Observable<List<String>> listOBservale = Observable.just()
     configureLayout();
     createObservable();
 
