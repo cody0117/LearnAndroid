@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
 
     println("$rawsString has ${rawsString.length} numbers of length")
     //Use of dollars sign works really well
-
+n
     var stringNullable :String? = null;
     var stringNullable2:String? = null; //nullable have to be in explicit type
     println(stringNullable?: "Is stringNullable really null then print -1") //=>-1
