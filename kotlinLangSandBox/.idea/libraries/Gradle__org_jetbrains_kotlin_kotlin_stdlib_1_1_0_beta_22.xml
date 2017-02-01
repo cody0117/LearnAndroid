@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.1.0-beta-22">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Could not find org.jetbrains.kotlin:kotlin-stdlib:1.1.0-beta-22." />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.0-beta-22/d7d189e44040e0648cfa86d3d2c3f5f364902858/kotlin-stdlib-1.1.0-beta-22.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.0-beta-22/36fe89907e9d3f89a294663625969b870f04b1ac/kotlin-stdlib-1.1.0-beta-22-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
