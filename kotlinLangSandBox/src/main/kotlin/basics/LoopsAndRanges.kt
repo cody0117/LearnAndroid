@@ -26,10 +26,21 @@ fun main(args: Array<String>) {
         println(captial)
     }
 
-    var i = 1--
+    var i = 100
     while (i>0) {
         i--
     }
-    
 
+    do {
+        var x= 10
+        x--
+        println("here is what happen in the do while loop "+ x)
+    } while (x>10)
+
+    loop@ for ( i in 1..100) {
+        for (j in 1..100) {
+            if (j%i ==0)
+                continue
+        }
+    }
 }
