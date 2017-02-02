@@ -11,8 +11,17 @@ fun operation(x: Int,op:(Int) -> Unit) {
     
 }
 
-fun route(path: String)
+fun route(path: String, vararg action:(String,String)-> String)
+{
+
+}
+fun UnaryOperation(x:Int, op:(Int)->Int) {
+op(x)
+}
+
+fun toSum(x: Int , y: Int) = x+y
 
 fun main(args: Array<String>) {
-    
+
+    println(toSum(1, 2)).
 }
