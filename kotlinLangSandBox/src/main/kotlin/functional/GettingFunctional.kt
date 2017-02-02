@@ -12,3 +12,7 @@ fun operation(x: Int,op:(Int) -> Unit) {
 }
 
 fun route(path: String)
+
+fun main(args: Array<String>) {
+    
+}
