@@ -23,5 +23,5 @@ fun toSum(x: Int , y: Int) = x+y
 
 fun main(args: Array<String>) {
 
-    println(toSum(1, 2)).
+    println(toSum(1, 2))
 }
