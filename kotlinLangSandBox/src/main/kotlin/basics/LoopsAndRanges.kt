@@ -40,7 +40,12 @@ fun main(args: Array<String>) {
     loop@ for ( i in 1..100) {
         for (j in 1..100) {
             if (j%i ==0)
-                continue
+            continue
+            // or
+              break@loop
+
+            //I can do something like this to break out the loop
+            //break out and go to this label loop@
         }
     }
 }

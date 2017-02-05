@@ -44,6 +44,6 @@ fun main(args: Array<String>) {
 
     val name = "Mary"
     val anOtherMessage ="Length of name of $name ${name.length}"
-
+   // The rules are () in the
     println(anOtherMessage)
 }
