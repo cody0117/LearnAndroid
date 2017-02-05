@@ -1,4 +1,6 @@
+package basics
 import basics.utils.someUtiils
+import org.intellij.lang.annotations.Language
 
 //1.1 -- Check out some of the convention from Jvaa
 //-- Lower camelCase for names
@@ -10,13 +12,25 @@ import basics.utils.someUtiils
 //Multiple class per file allowed
 
 
-package basics
 
-import basics.utils.someUtiils
+
+
 
 /**
  * Created by victor888 on 2/2/2017.
  */
 fun main(args: Array<String>) {
- someUtiils("Something interesting")
+
+  someUtiils("Something interesting")
+  someUtiils("Something interesting")
+
+  @Language("JSON")
+  var string = "{\"name\":\"dahi\"}"
+
+  var somethingelse ="something"
+
+  println(string)
+
+//Ctrl+ Shit move Line again,nice
+
 }
