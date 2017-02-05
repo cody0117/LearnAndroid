@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
 
   when (result) {
     20 -> {
-      print("String  Not Empyty "+ result
+      print("String  is  Not Empyty "+ result
       //No break statment, it kind of break out
       )
     }

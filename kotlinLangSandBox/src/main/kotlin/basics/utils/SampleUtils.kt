@@ -5,5 +5,5 @@ package basics.utils
  */
 
 fun someUtiils(name: String): Unit {
-    
+  println(name)
 }
