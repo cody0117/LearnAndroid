@@ -1,5 +1,7 @@
 package functions
 
+import java.util.Arrays.asList
+
 
 /**
  * Created by victor888 on 2/6/2017.
@@ -13,7 +15,7 @@ package functions
 fun main(args: Array<String>) {
   hello()
   //throwingException()
-  var number4 = functionReturnAFour()
+   var number4 = functionReturnAFour()
   takingString("Some Value")
    sum(2,4)
   2.sumInShortForm(5)
@@ -39,9 +41,11 @@ fun main(args: Array<String>) {
 }
 
 fun playWithSpreadOperator() {
-  var list = listOf(1,2,3)
-  //val someOtherList = listOf<Int>(0,*list)
-//Todo Figure out what is Spread Operator
+  val varargs = arrayOf(1, 2, 3) //Something passing in by vararg
+  val b = asList(0,*a) //if we already have an arrray, we can  use this too
+  println("The spread operator would work? $b")
+
+  //Todo Figure out what is Spread Operator
 // println(someOtherList)
 }
 
