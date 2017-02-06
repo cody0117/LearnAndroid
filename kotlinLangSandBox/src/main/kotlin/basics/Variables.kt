@@ -4,6 +4,23 @@ package basics
  * Created by cyber on 2017-02-02.
  */
 fun main(args: Array<String>) {
+
+    val c: Char = '\u0041'
+    c.takeIf { it.toInt()!=22} ?: print("Match \n")
+
+    val s = "hello"
+    println(s[0]) //Index
+    println(s) //Whole String
+    s.forEach { print(it +"\t")  } //Break it down
+
+    var price =123.0F
+    println("\n c = $price , price is ${'$'}${price/10}")
+
+    val s1 = "${(10 downTo 1).toList().map { it.toString().toCharArray().asList()}.joinToString()}"
+    println(s1)
+
+
+
     var streetNumber: Int = 10 // Alt + enter for explicit type
     var streetName = "High Street"
     val zip = "E11 P1"
