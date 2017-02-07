@@ -37,12 +37,26 @@ fun main(args: Array<String>) {
 
   playWithSpreadOperator()
 
+  println("4 *3  = ${triple(4)}")
+
+  val argIntArray = intArrayOf(6, 7, 8, 9, 10)
+  println("Sum this up should equal 15 == "+ sumItUp(1, 2, 3, 4,5,*argIntArray))
+  //Goal is pass args into array
 
 }
 
+fun  sumItUp(vararg values:Int): Int {
+  var result =0
+  values.forEach {f -> result += f }
+  return result
+}
+
+fun triple(x : Int) = x*3 //This is no return and return type in here
+//kotlin is very smart with this
+
 fun playWithSpreadOperator() {
   val varargs = arrayOf(1, 2, 3) //Something passing in by vararg
-  val b = asList(0,*a) //if we already have an arrray, we can  use this too
+  val b = asList(0,*varargs) //if we already have an arrray, we can  use this too
   println("The spread operator would work? $b")
 
   //Todo Figure out what is Spread Operator
