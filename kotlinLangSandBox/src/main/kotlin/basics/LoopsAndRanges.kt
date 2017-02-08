@@ -6,7 +6,9 @@ package basics
 fun main(args: Array<String>) {
 
     ranges()
+    rangSample()
 
+    kotlinLoops()
 }
 
 private fun kotlinLoops() {
