@@ -6,19 +6,19 @@ package inheritance
 
 abstract class StoredEntity{
     val isActive = true
-    abstract fun status(): String  {
-     return isActive.toString()
-    }
+//    abstract fun status(): String  {
+//     return isActive.toString()
+//    }
 }
 
 class Employee:StoredEntity() {
-    override fun status(): String {
-        throw UnsupportedOperationException("not implemented")
-    }
+//    override fun status(): String {
+//        throw UnsupportedOperationException("not i2mplemented")
+//    }
 }
 
 fun main(args: Array<String>) {
     val se = Employee()
-    se.isAtive
-    se.status()
+    //se.isAtive
+    //se.status()
 }
