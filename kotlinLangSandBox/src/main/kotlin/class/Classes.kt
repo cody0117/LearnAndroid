@@ -39,6 +39,7 @@ class CustomerWithInitBlock(var initID: Int, var initName: String) {
 class CustomerWithProperty(var initID: Int = 0, var initName: String = "") {//This is constructor
   //Using VAR to make property
   //Works with default argument
+  //There is no concept wiht field
 }
 
 class CustomerWithoutProperty(initID: Int, initName: String) {//This is constructor
