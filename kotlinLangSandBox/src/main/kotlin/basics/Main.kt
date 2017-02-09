@@ -4,7 +4,7 @@ import org.intellij.lang.annotations.Language
 import basics.utils.someUtiils as someAdditionalFunction
 //as someAdditionalFunction is great for  conflict
 
-//1.1 -- Check out some of the convention from Jvaa
+//1.1 -- Check out some of the convention from Java
 //-- Lower camelCase for names
 //-- Method and Properties lower camelCase
 //-- Semicolons  are optional(and only required in a single place)

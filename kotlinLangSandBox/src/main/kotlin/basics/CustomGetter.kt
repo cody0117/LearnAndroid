@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
 
 fun randomRecetangle() :Square {
   var random =Random()
-  return Square(random.nextInt(),random.nextInt().rangeTo(1..10))
+  return Square(random.nextInt(5),random.nextInt(5))
 
 }
 
