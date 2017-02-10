@@ -1,4 +1,4 @@
-package basics
+package `class`
 
 import java.util.*
 
@@ -12,8 +12,8 @@ fun main(args: Array<String>) {
   println("The new randome Recetangle ${randomRecetangle.height}  and ${randomRecetangle.width}is ${randomRecetangle.isSquare}")
 }
 
-fun randomRecetangle() :Square {
-  var random =Random()
+fun randomRecetangle() : Square {
+  var random = Random()
   return Square(random.nextInt(5),random.nextInt(5))
 
 }
