@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8106016b-e159-4ad3-a724-e6b14f1d7c37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/NestedInnerFunction.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionProperty.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/InfixFunction.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/LamdaFunctions.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/basics/CustomGetter.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/CustomGetter.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/basics/Main.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Main.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -104,11 +104,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExtensionFunction.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt">
+      <file leaf-file-name="LamdaFunctions.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/LamdaFunctions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="232">
+              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -532,6 +532,9 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/basics/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/functions/NestedInnerFunction.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/functions/InfixFunction.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionProperty.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/functions/LamdaFunctions.kt" />
       </list>
     </option>
   </component>
@@ -542,10 +545,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="-16" />
-    <option name="width" value="3232" />
-    <option name="height" value="1732" />
+    <option name="width" value="3200" />
+    <option name="height" value="1800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -601,8 +602,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -691,32 +690,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="inheritance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlinSandBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlinLangSandBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -769,32 +742,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlinSandBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlinLangSandBox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="basics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -815,6 +762,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -826,6 +775,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="inner&#9;FILE&#9;file://C:/Dev/LearnAndroid/kotlinLangSandBox/src/main/kotlin/functions/NestedInnerFunction.kt&#10;Variab&#9;FILE&#9;file://C:/Dev/LearnAndroid/kotlinLangSandBox/src/main/kotlin/basics/Variables.kt&#10;Nothing&#9;null&#9;null&#10;#plugins Jr&#9;null&#9;null&#10;#plugin&#9;null&#9;null&#10;main&#9;FILE&#9;file://C:/Dev/LearnAndroid/kotlinLangSandBox/src/main/kotlin/basics/Main.kt" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -833,46 +783,7 @@
       <recent name="C:\Dev\LearnAndroid\kotlinLangSandBox\src\main\kotlin\basics" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.functions.NestedInnerFunctionKt">
-    <configuration default="false" name="inheritance.AbstractClassKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="inheritance.AbstractClassKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="kotlinSandBox_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="class.DataClassKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="class.DataClassKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="kotlinSandBox_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="basics.MaxKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="basics.MaxKt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="kotlinSandBox_main" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.functions.InfixFunctionKt">
     <configuration default="false" name="basics.CustomGetterKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="basics.CustomGetterKt" />
@@ -889,6 +800,45 @@
     <configuration default="false" name="functions.NestedInnerFunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="functions.NestedInnerFunctionKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kotlinSandBox_main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="functions.ExtensionFunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="functions.ExtensionFunctionKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kotlinSandBox_main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="functions.ExtensionPropertyKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="functions.ExtensionPropertyKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kotlinSandBox_main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="functions.InfixFunctionKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="functions.InfixFunctionKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1296,19 +1246,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Kotlin.inheritance.AbstractClassKt" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.class.DataClassKt" />
-      <item index="2" class="java.lang.String" itemvalue="Kotlin.basics.MaxKt" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.basics.CustomGetterKt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.functions.NestedInnerFunctionKt" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.basics.CustomGetterKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.functions.NestedInnerFunctionKt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.functions.ExtensionFunctionKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.functions.ExtensionPropertyKt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.functions.InfixFunctionKt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.functions.NestedInnerFunctionKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.basics.CustomGetterKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.basics.MaxKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.class.DataClassKt" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.inheritance.AbstractClassKt" />
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.functions.InfixFunctionKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.functions.ExtensionPropertyKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.functions.ExtensionFunctionKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.functions.NestedInnerFunctionKt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.basics.CustomGetterKt" />
       </list>
     </recent_temporary>
   </component>
@@ -1345,11 +1295,15 @@
       <workItem from="1486569127697" duration="780000" />
       <workItem from="1486609395498" duration="113000" />
       <workItem from="1486609537661" duration="2009000" />
+      <workItem from="1486630967390" duration="789000" />
+      <workItem from="1486631969804" duration="2173000" />
+      <workItem from="1486644721056" duration="1357000" />
+      <workItem from="1486689800006" duration="1880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40717000" />
+    <option name="totallyTimeSpent" value="46916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1361,7 +1315,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
+    <frame x="0" y="0" width="3200" height="1800" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1378,15 +1332,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32562387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28423616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24612904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2616129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1401,6 +1355,44 @@
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986832" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256625" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33194733" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3256625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25387096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1427,17 +1419,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionProperty.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1486690920958" expanded="true" signature="19:63" ph="/** Created by victor888 on 2/9/2017. ...*/" />
+            <marker date="1486690920958" expanded="true" signature="137:190" ph="{...}" />
+            <marker date="1486690920958" expanded="true" signature="259:474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionProperty.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1486690920958" expanded="true" signature="19:63" ph="/** Created by victor888 on 2/9/2017. ...*/" />
+            <marker date="1486690920958" expanded="true" signature="137:190" ph="{...}" />
+            <marker date="1486690920958" expanded="true" signature="259:474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/basics/CustomGetter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1450">
           <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <marker date="1486569262919" expanded="true" signature="83:127" ph="/** Created by victor888 on 2/8/2017. ...*/" />
-            <marker date="1486569262919" expanded="true" signature="158:369" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="402:482" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="530:619" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="585:617" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,13 +1468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
           <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <marker date="1486569262919" expanded="true" signature="83:127" ph="/** Created by victor888 on 2/8/2017. ...*/" />
-            <marker date="1486569262919" expanded="true" signature="158:369" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="402:482" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="530:619" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="585:617" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1459,13 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <marker date="1486569262919" expanded="true" signature="83:127" ph="/** Created by victor888 on 2/8/2017. ...*/" />
-            <marker date="1486569262919" expanded="true" signature="158:369" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="402:482" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="530:619" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="585:617" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1611,13 +1620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/functions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/inheritance/GenericRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1666,13 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <marker date="1486569262919" expanded="true" signature="83:127" ph="/** Created by victor888 on 2/8/2017. ...*/" />
-            <marker date="1486569262919" expanded="true" signature="158:369" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="402:482" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="530:619" ph="{...}" />
-            <marker date="1486569262919" expanded="true" signature="585:617" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1680,11 +1675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1486397687197" expanded="true" signature="16:58" ph="/** Created by cyber on 2017-02-02. ...*/" />
-            <marker date="1486397687197" expanded="true" signature="89:1644" ph="{...}" />
-            <marker date="1486397687197" expanded="true" signature="1360:1435" ph="&quot;&quot;&quot; This is a string ...&quot;&quot;&quot;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1692,12 +1682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <marker date="1486547995836" expanded="true" signature="16:58" ph="/** Created by cyber on 2017-02-08. ...*/" />
-            <marker date="1486547995836" expanded="true" signature="91:133" ph="{...}" />
-            <marker date="1486547995836" expanded="true" signature="165:224" ph="{...}" />
-            <marker date="1486547995836" expanded="true" signature="250:283" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1717,11 +1701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <marker date="1486610552539" expanded="false" signature="22:149" ph="..." />
-            <marker date="1486610552539" expanded="true" signature="584:628" ph="/** Created by victor888 on 2/2/2017. ...*/" />
-            <marker date="1486610552539" expanded="true" signature="659:969" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1729,22 +1708,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.0-beta-38/4360fe534c18acb7508780e29f90ce046870c605/kotlin-stdlib-1.1.0-beta-38-sources.jar!/generated/_Ranges.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="296" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/functions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <marker date="1486400957300" expanded="true" signature="17:59" ph="/** Created by cyber on 2017-02-02. ...*/" />
-            <marker date="1486400957300" expanded="true" signature="90:204" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="221:610" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="645:944" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="709:823" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="841:878" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="893:938" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="980:1435" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1227:1368" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1374:1417" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1459:1923" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1543:1571" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1703:1868" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="1943:2211" ph="{...}" />
-            <marker date="1486400957300" expanded="true" signature="2231:2387" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="51:297" ph="/** Created by victor888 on 2/6/2017. ...*/" />
+            <marker date="1486438151883" expanded="true" signature="328:594" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="632:785" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="829:1183" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="1230:1334" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="1371:1538" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="1577:1651" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="1787:2058" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2108:2170" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2223:2305" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2278:2303" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2383:2439" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2509:2533" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2612:2630" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2660:2679" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2693:2717" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2750:2764" ph="{...}" />
+            <marker date="1486438151883" expanded="true" signature="2824:2878" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1762,228 +1765,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.0-beta-38/4360fe534c18acb7508780e29f90ce046870c605/kotlin-stdlib-1.1.0-beta-38-sources.jar!/generated/_Ranges.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/InfixFunction.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="296" selection-end-column="1" />
+        <state relative-caret-position="720">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
-            <marker date="1486297589510" expanded="true" signature="299:364" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="473:511" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="513:578" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="689:728" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="730:795" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="908:948" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="950:1015" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="1130:1171" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="1173:1238" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="1351:1391" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="1393:1458" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="1569:1656" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="1658:1723" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="1836:1924" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="1926:1991" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="2104:2192" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="2194:2259" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="2374:2463" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="2465:2530" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="2645:2685" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="2687:2752" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="2862:2949" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="2951:3016" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="3128:3216" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="3218:3283" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="3395:3483" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="3485:3550" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="3664:3753" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="3755:3820" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="3936:3977" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="3979:4044" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="4154:4193" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="4195:4260" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="4370:4458" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="4460:4525" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="4637:4726" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="4728:4793" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="4907:4948" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="4950:5015" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="5127:5167" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="5169:5234" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="5343:5430" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="5432:5497" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="5608:5696" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="5698:5763" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="5876:5965" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="5967:6032" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="6147:6188" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="6190:6255" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="6368:6408" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="6410:6475" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="6585:6623" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="6625:6690" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="6802:6841" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="6843:6908" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="7020:7108" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="7110:7175" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="7291:7332" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="7334:7399" ph="/** Checks if the specified [value] belongs to this range. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="7513:7553" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="7555:7708" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="7763:7830" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="7832:7985" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="8042:8112" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="8114:8267" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="8323:8398" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="8400:8553" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="8610:8685" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="8687:8840" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="8897:8957" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="8959:9112" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="9166:9225" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="9227:9380" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="9436:9506" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="9508:9661" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="9716:9783" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="9785:9938" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="9994:10061" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="10063:10216" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="10272:10342" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="10344:10497" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="10554:10615" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="10617:10770" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="10827:10897" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="10899:11052" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="11110:11180" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="11182:11335" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="11391:11458" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="11460:11613" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="11671:11741" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="11743:11896" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="11953:12028" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="12030:12183" ph="/** Returns a progression from this value down to the specified [to] value with the step -1. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="12241:12316" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="12318:12426" ph="/** Returns a progression that goes over the same range in the opposite direction with the same step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="12480:12545" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="12547:12655" ph="/** Returns a progression that goes over the same range in the opposite direction with the same step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="12711:12777" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="12779:12887" ph="/** Returns a progression that goes over the same range in the opposite direction with the same step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="12943:13009" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="13011:13094" ph="/** Returns a progression that goes over the same range with the given step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="13159:13293" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="13295:13378" ph="/** Returns a progression that goes over the same range with the given step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="13446:13581" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="13583:13666" ph="/** Returns a progression that goes over the same range with the given step. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="13733:13868" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="13914:14012" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14059:14159" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14207:14309" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14358:14462" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14510:14612" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14657:14754" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14801:14902" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="14948:15047" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15096:15200" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15248:15350" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15398:15499" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15548:15651" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15702:15809" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15859:15964" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="15966:16054" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="16102:16149" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="16151:16239" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="16289:16338" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="16340:16428" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="16477:16532" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="16534:16622" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="16672:16727" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="16729:16907" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="16957:17044" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="17046:17229" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="17276:17366" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="17368:17456" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="17505:17554" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="17556:17739" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="17787:17885" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="17887:18070" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="18119:18217" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="18219:18403" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="18452:18554" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="18556:18740" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="18790:18883" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="18885:19069" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="19119:19221" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="19223:19407" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="19458:19560" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="19562:19650" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="19699:19746" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="19748:19836" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="19887:19936" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="19938:20026" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="20076:20131" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="20133:20221" ph="/** Returns a range from this value up to but excluding the specified [to] value. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="20272:20327" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="20329:20521" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="20588:20650" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="20652:20844" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="20901:20963" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="20965:21157" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="21217:21279" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="21281:21473" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="21527:21589" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="21591:21783" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="21840:21902" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="21904:22096" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="22156:22218" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="22220:22412" ph="/** Ensures that this value is not less than the specified [minimumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="22475:22537" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="22539:22731" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="22797:22859" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="22861:23053" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="23109:23171" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="23173:23365" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="23424:23486" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="23488:23680" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="23733:23795" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="23797:23989" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="24045:24107" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="24109:24301" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="24360:24422" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="24424:24616" ph="/** Ensures that this value is not greater than the specified [maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="24678:24740" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="24742:25009" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="25090:25624" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="25148:25433" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="25443:25606" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="25626:25893" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="25965:26250" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="26252:26519" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="26595:26880" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="26882:27149" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="27217:27502" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="27504:27771" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="27843:28128" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="28130:28397" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="28473:28758" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="28760:29027" ph="/** Ensures that this value lies in the specified range [minimumValue]..[maximumValue]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="29107:29392" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="29394:29644" ph="/** Ensures that this value lies in the specified [range]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="29745:30270" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="30272:30522" ph="/** Ensures that this value lies in the specified [range]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="30590:30932" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="30635:30681" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="30934:31184" ph="/** Ensures that this value lies in the specified [range]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="31239:31583" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="31284:31332" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="31585:31835" ph="/** Ensures that this value lies in the specified [range]. ...*/" />
-            <marker date="1486297589510" expanded="true" signature="31893:32238" ph="{...}" />
-            <marker date="1486297589510" expanded="true" signature="31938:31987" ph="{...}" />
+            <marker date="1486690893586" expanded="true" signature="19:64" ph="/** Created by victor888 on 2/10/2017. ...*/" />
+            <marker date="1486690893586" expanded="true" signature="95:117" ph="{...}" />
+            <marker date="1486690893586" expanded="true" signature="141:491" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunction.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/ExtensionProperty.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="894">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <marker date="1486690920958" expanded="true" signature="19:63" ph="/** Created by victor888 on 2/9/2017. ...*/" />
+            <marker date="1486690920958" expanded="true" signature="137:190" ph="{...}" />
+            <marker date="1486690920958" expanded="true" signature="259:474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/functions/LamdaFunctions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
