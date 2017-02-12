@@ -12,11 +12,12 @@ class Average {
         {
             sum+= x
         }
-        return sum/value.count()
+        return sum/value.size
     }
 }
 
 fun main(args: Array<String>) {
     val average = Average()
-    println(average(1.0, 3.0, 4.9))
+    println(average.invoke(1.0, 3.0, 4.9))
+   // println(average(1.0, 3.0, 4.9)) //Why it wont work?
 }

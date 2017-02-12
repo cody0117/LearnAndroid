@@ -7,9 +7,24 @@ import java.util.*
  *
  */
 fun main(args: Array<String>) {
-  extendion_function()
-  createAnyNullTypeFunction()
+  //extendion_function()
+  //createAnyNullTypeFunction()
+  //println("15.0 is less than  or equal to 15 " + 15.0.lessThanOrEqualTo(10.0)
+  extendionMethodForDefault()
+}
 
+fun extendionMethodForDefault() {
+
+  var two = "two"
+  println("I have ${two.invoke()} apples")
+}
+
+fun String.invoke():String{
+  return "("+this+")"
+}
+
+fun Double.lessThanOrEqualTo(a: Double): Boolean {
+return this<=a
 }
 
 fun createAnyNullTypeFunction() {
